@@ -32,6 +32,16 @@ else
     echo "Atom is already installed!"
 fi
 
+if ! command -v "netbeans" > /dev/null; then
+    echo "Netbeans is not installed." 
+    echo "Installing Netbeans"
+    sudo apt-get install netbeans 
+else
+    echo "Netbeans is already installed!"
+fi
+
+
+
 
 echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
