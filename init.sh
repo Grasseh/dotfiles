@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "Loading Configuration Dotfiles!"
+mkdir tmp
 
 echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
@@ -13,6 +14,24 @@ if ! command -v "vim" > /dev/null; then
 else
     echo "Vim is already installed!"
 fi
+
+if ! command -v "wget" > /dev/null; then
+    echo "Wget is not installed." 
+    echo "Installing Wget"
+    sudo apt-get install wget
+else
+    echo "Wget is already installed!"
+fi
+
+if ! command -v "atom" > /dev/null; then
+    echo "Atom is not installed." 
+    echo "Installing Atom"
+    wget -P /tmp/ https://github.com/atom/atom/releases/download/v1.6.1/atom-amd64.deb
+    sudo dpkg --install /tmp/atom-amd64.deb
+else
+    echo "Atom is already installed!"
+fi
+
 
 echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
@@ -29,4 +48,5 @@ echo "Done linking Bash Profile"
 
 echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
+rm -df tmp
 echo "Done writing configurations!"
