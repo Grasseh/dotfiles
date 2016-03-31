@@ -46,6 +46,10 @@ echo "Done linking Global Git Ignore"
 ln -sf ~/dotfiles/.bash_profile ~/.bash_profile;
 echo "Done linking Bash Profile"  
 
+ln -sf ~/dotfiles/.bashrc ~/.bashrc;
+echo "Done linking Bash rc"  
+
+
 echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
 rm -df tmp
