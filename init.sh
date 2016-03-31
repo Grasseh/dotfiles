@@ -6,7 +6,7 @@ echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
 echo "Installing missing programs"
 
-if ! command -v "vim" > /dev/null/; then
+if ! command -v "vim" > /dev/null; then
     echo " Vim is not installed." 
     echo "Installing Vim"
     sudo apt-get install vim
