@@ -61,7 +61,7 @@ alias gdc='git diff --cached'
 # ---------------------------------------------------------------------
 alias dotfiles='cd ~/dotfiles'
 alias ..='cd ..'
-alias la='ls -als'
+alias la='ls -als --color'
 alias ~="cd ~"
 alias c='clear'
 alias path='echo -e ${PATH//:/\\n}'
@@ -94,6 +94,6 @@ parse_git_branch() {
 # ---------------------------------------------------------------------
 # Prompt
 # ---------------------------------------------------------------------
-export PS1="\[\033[36m\]\u\[\033[m\]:\[\033[33;1m\]\w\[\033[m\] \[\033[32m\]\$(parse_git_branch)\[\033[m\] "
+export PS1="\[\e[38;5;64m\]\u\[\e[m\]:\[\e[32;1m\]\w\[\e[m\] \[\e[38;5;40m\]\$(parse_git_branch) | \[\e[m\] "
 export CLICOLOR=1
 export LSCOLORS=fxFxBxDxCxegedabagacad
