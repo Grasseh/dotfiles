@@ -4,8 +4,10 @@ This repository contains my personal dotfiles for Ubuntu based systems. This sho
 
 ## Installation
 
-To install, move to your home directory in your terminal, then clone this repository. Afterwards run the following commands in your terminal :
+To install, run the following commands in your terminal :
  
+    cd ~
+    git clone git@github.com:Grasseh/UbuntuDotfiles.git
     cd ~/dotfiles
     bash init.sh
     source .bash_profile
