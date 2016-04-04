@@ -10,7 +10,7 @@ echo "Installing missing programs"
 if ! command -v "vim" > /dev/null; then
     echo " Vim is not installed." 
     echo "Installing Vim"
-    sudo apt-get install vim
+    sudo apt-get -y install vim
 else
     echo "Vim is already installed!"
 fi
@@ -18,7 +18,7 @@ fi
 if ! command -v "wget" > /dev/null; then
     echo "Wget is not installed." 
     echo "Installing Wget"
-    sudo apt-get install wget
+    sudo apt-get -y install wget
 else
     echo "Wget is already installed!"
 fi
@@ -35,13 +35,20 @@ fi
 if ! command -v "netbeans" > /dev/null; then
     echo "Netbeans is not installed." 
     echo "Installing Netbeans"
-    sudo apt-get install netbeans 
+    sudo apt-get -y install netbeans 
 else
     echo "Netbeans is already installed!"
 fi
 
-
-
+if ! command -v "mysql" > /dev/null; then
+    echo "LAMP stack not installed"
+    echo "Installing LAMP"
+    sudo apt-get -y install apache2
+    sudo apt-get -y install php5
+    sudo apt-get -y install mysql-server 
+else
+    echo "LAMP is installed"
+fi
 
 echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
@@ -58,6 +65,9 @@ echo "Done linking Bash Profile"
 
 ln -sf ~/dotfiles/.bashrc ~/.bashrc;
 echo "Done linking Bash rc"  
+
+ln -sf ~/dotfiles/.vimrc ~/.vimrc;
+echo "Done linking Vim rc"  
 
 
 echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
