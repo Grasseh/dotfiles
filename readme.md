@@ -8,6 +8,7 @@ To install, move to your home directory in your terminal, then clone this reposi
  
     cd ~/dotfiles
     bash init.sh
+    source .bash_profile
 
 You need sudo rights to run some commands in the bash file. You may need to enter your sudo password during the execution of the scripts. You will need to enter a MySQL password during the execution. 
 
