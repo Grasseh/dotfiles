@@ -4,9 +4,11 @@ This repository contains my personal dotfiles for Ubuntu based systems. This sho
 
 ## Installation
 
-To install, move to your home directory in your terminal, then clone this repository. Afterwards run the following commands in your terminal : 
+To install, move to your home directory in your terminal, then clone this repository. Afterwards run the following commands in your terminal :
+ 
     cd ~/dotfiles
     bash init.sh
+
 You need sudo rights to run some commands in the bash file. You may need to enter your sudo password during the execution of the scripts. You will need to enter a MySQL password during the execution. 
 
 ## Sources
