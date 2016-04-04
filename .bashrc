@@ -1,1 +1,1 @@
-set background=dark
+. ~/.bash_profile
