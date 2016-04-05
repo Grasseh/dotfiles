@@ -73,6 +73,8 @@ echo "Done linking Bash rc"
 ln -sf ~/dotfiles/.vimrc ~/.vimrc;
 echo "Done linking Vim rc"  
 
+ln -sf ~/dotfiles/atom/config.cson ~/.atom/config.cson
+echo "Done linking atom Config file"
 
 echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
