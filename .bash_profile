@@ -88,7 +88,28 @@ export EDITOR=/usr/bin/vim
 # ---------------------------------------------------------------------
 
 parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+make_site(){
+    sudo mkdir tmp
+    #Generate Apache Config File
+    sudo cp apache/base.loc.conf tmp/$1.loc.conf
+    sudo perl -pi -e 's/#Website#/'$1'/g' tmp/$1.loc.conf
+    sudo mv tmp/$1.loc.conf /etc/apache2/sites-available/$1.loc.conf
+    #Create Apache Directory 
+    sudo mkdir /var/www/$1.loc
+    sudo mkdir ~/projects/$1.com
+    sudo ln -sf ~/projects/$1.com /var/www/$1.loc/public_html;
+    sudo chown -R $USER:$USER /var/www/$1.loc/public_html
+    #Enable site
+    sudo a2ensite $1.loc.conf
+    sudo service apache2 restart
+    #Setup hosts file
+    sudo -- sh -c "echo 127.0.0.1 "$1".loc >> /etc/hosts"
+    sudo -- sh -c "echo 127.0.0.1 www."$1".loc >> /etc/hosts"
+    sudo chmod -R 777 ~/projects 
+    sudo rm -d -r -f tmp
 }
 
 # ---------------------------------------------------------------------
