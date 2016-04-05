@@ -28,9 +28,13 @@ if ! command -v "atom" > /dev/null; then
     echo "Installing Atom"
     wget -P /tmp/ https://github.com/atom/atom/releases/download/v1.6.1/atom-amd64.deb
     sudo dpkg --install /tmp/atom-amd64.deb
+    apm install --packages-file atom/package-list.txt
 else
     echo "Atom is already installed!"
+    echo "Checking for outdated Atom packages."
+    apm upgrade
 fi
+
 
 if ! command -v "netbeans" > /dev/null; then
     echo "Netbeans is not installed." 
