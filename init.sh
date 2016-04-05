@@ -3,6 +3,12 @@
 echo "Loading Configuration Dotfiles!"
 mkdir tmp
 
+echo "Initializing basic system configurations"
+
+echo "Setting up 9 workspaces"
+gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ vsize 3
+gsettings set org.compiz.core:/org/compiz/profiles/unity/plugins/core/ hsize 3
+
 echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
 echo "Installing missing programs"
