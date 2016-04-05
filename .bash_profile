@@ -92,11 +92,11 @@ parse_git_branch() {
 }
 
 make_site(){
-    sudo mkdir tmp
+    sudo mkdir ~/tmp
     #Generate Apache Config File
-    sudo cp apache/base.loc.conf tmp/$1.loc.conf
-    sudo perl -pi -e 's/#Website#/'$1'/g' tmp/$1.loc.conf
-    sudo mv tmp/$1.loc.conf /etc/apache2/sites-available/$1.loc.conf
+    sudo cp ~/dotfiles/apache/base.loc.conf ~/tmp/$1.loc.conf
+    sudo perl -pi -e 's/#Website#/'$1'/g' ~/tmp/$1.loc.conf
+    sudo mv ~/tmp/$1.loc.conf /etc/apache2/sites-available/$1.loc.conf
     #Create Apache Directory 
     sudo mkdir /var/www/$1.loc
     sudo mkdir ~/projects/$1.com
@@ -109,7 +109,20 @@ make_site(){
     sudo -- sh -c "echo 127.0.0.1 "$1".loc >> /etc/hosts"
     sudo -- sh -c "echo 127.0.0.1 www."$1".loc >> /etc/hosts"
     sudo chmod -R 777 ~/projects 
-    sudo rm -d -r -f tmp
+    sudo rm -d -r -f ~/tmp
+}
+
+delete_site(){
+    #UnSetup hosts file   
+    sudo perl -ni.bak -e "print unless /127.0.0.1 www."$1".loc/" /etc/hosts
+    sudo perl -ni.bak -e "print unless /127.0.0.1 "$1".loc/" /etc/hosts
+    #Disable site
+    sudo a2dissite $1.loc.conf
+    sudo service apache2 restart
+    #Remove Apache Directory
+    sudo rm -r -f -d /var/www/$1.loc
+    #Remove Apache Config
+    sudo rm -f /etc/apache2/sites-available/$1.loc.conf
 }
 
 # ---------------------------------------------------------------------
