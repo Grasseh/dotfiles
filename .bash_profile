@@ -55,6 +55,10 @@ alias gta='git tag -a'
 # diff
 alias gd='git diff'
 alias gdc='git diff --cached'
+#bisect
+alias gbi='git bisect'
+alias gbig='git bisect good'
+alias gbib='git bisect bad'
 
 # ---------------------------------------------------------------------
 # Other aliases
