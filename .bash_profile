@@ -132,6 +132,6 @@ delete_site(){
 # ---------------------------------------------------------------------
 # Prompt
 # ---------------------------------------------------------------------
-export PS1="\[\e[38;5;64m\]\u\[\e[m\]:\[\e[32;1m\]\w\[\e[m\] \[\e[38;5;40m\]\$(parse_git_branch) | \[\e[m\] "
+export PS1="\[\e[38;5;94m\]\A - \[\e[38;5;64m\]\u\[\e[m\]:\[\e[32;1m\]\w\[\e[m\]\[\e[38;5;40m\]\$(parse_git_branch) - \[\e[m\]"
 export CLICOLOR=1
 export LSCOLORS=fxFxBxDxCxegedabagacad
