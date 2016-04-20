@@ -70,7 +70,7 @@ alias ~="cd ~"
 alias c='clear'
 alias path='echo -e ${PATH//:/\\n}'
 alias rmr='sudo rm -R'
-alias reload='. ~/.bash_profile'
+alias reload='. ~/.bashrc'
 alias gitgud='echo "[ ] not rekt  [x] rekt"'
 alias notes='vim ~/notes'
 alias todo='vim ~/todo'
@@ -133,6 +133,6 @@ delete_site(){
 # ---------------------------------------------------------------------
 # Prompt
 # ---------------------------------------------------------------------
-export PS1="\[\e[38;5;94m\]\A - \[\e[38;5;64m\]\u\[\e[m\]:\[\e[32;1m\]\w\[\e[m\]\[\e[38;5;40m\]\$(parse_git_branch) - \[\e[m\]"
+export PS1="$Brown\A - $DarkGreen\u:$BGreen\w$Reset$Green\$(parse_git_branch) - $Reset"
 export CLICOLOR=1
 export LSCOLORS=fxFxBxDxCxegedabagacad

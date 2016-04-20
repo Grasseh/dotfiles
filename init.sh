@@ -82,6 +82,9 @@ echo "Done linking Vim rc"
 ln -sf ~/dotfiles/atom/config.cson ~/.atom/config.cson
 echo "Done linking atom Config file"
 
+ln -sf ~/dotfiles/.bash_aliases ~/.bash_aliases;
+echo "Done linking Bash Aliases"  
+
 echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
 rm -df tmp
