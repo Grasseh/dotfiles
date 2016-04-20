@@ -23,17 +23,10 @@ alias gcm='git commit -m'
 # merge
 alias gcp='git cherry-pick'
 alias gm="git merge --no-ff"
-alias gass='git update-index --assume-unchanged'
-alias gassu='git update-index --no-assume-unchanged'
-alias gassl='!git ls-files -v | grep ^h | cut -c 3-'
 # log
 alias gl='git log --graph --abbrev-commit --decorate --date=relative --format=format:'"'"'%C(bold cyan)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(magenta)- %an%C(reset)%C(bold yellow)%d%C(reset)'"'"' --all'
 alias gl2='git log --graph --abbrev-commit --decorate --format=format:'"'"'%C(bold cyan)%h%C(reset) - %C(bold green)%aD%C(reset) %C(dim green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n          %C(white)%s%C(reset) %C(magenta)- %an%C(reset)'"'"' --all'
 alias grl='git reflog;'
-# submodule
-alias gsi='git submodule init; git submodule update'
-alias gsu='git submodule sync; git submodule update'
-alias gss='git submodule sync'
 # push
 alias gp='git push;'
 alias gpod='git push origin dev;'
@@ -56,10 +49,17 @@ alias gta='git tag -a'
 alias gd='git diff'
 alias gdc='git diff --cached'
 #bisect
-alias gbi='git bisect'
-alias gbig='git bisect good'
-alias gbib='git bisect bad'
-
+alias gbi="git bisect"
+alias gbis="git bisect start"
+alias gbib="git bisect bad"
+alias gbig="git bisect good"
+alias gbir="git bisect reset"
+#Remote
+alias gre="git remote"
+alias grea="git remote add"
+alias gres="git remote set-url"
+alias greso="git remote set-url origin"
+alias grer="git remote remove"
 # ---------------------------------------------------------------------
 # Other aliases
 # ---------------------------------------------------------------------
@@ -72,6 +72,8 @@ alias path='echo -e ${PATH//:/\\n}'
 alias rmr='sudo rm -R'
 alias reload='. ~/.bash_profile'
 alias gitgud='echo "[ ] not rekt  [x] rekt"'
+alias notes='vim ~/notes'
+alias todo='vim ~/todo'
 
 # ---------------------------------------------------------------------
 # Directory aliases
@@ -80,7 +82,6 @@ alias home='cd ~'
 alias grasseh='cd ~/projects/grasseh.com'
 alias desktop='cd ~/Desktop'
 alias ets='cd ~/ets' 
-
 # ---------------------------------------------------------------------
 # Default Editor
 # ---------------------------------------------------------------------
