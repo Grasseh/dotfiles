@@ -16,3 +16,10 @@ Green="\[\e[38;5;40m\]"
 
 #Bold Colors
 BGreen="\[\e[32;1m\]"
+
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+#-=-=-=-=-=-=-=-GIT PROMPT=-=-=-=-=-=-=-=-#
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+GIT_PS1_SHOWDIRTYSTATE="kk" #Display a * If there's a modified/deleted file
+GIT_PS1_SHOWUNTRACKEDFILES="kk" #Display a % if there's an untracked file in the director
+GIT_PS1_SHOWUPSTREAM="verbose name" #Show Difference with Upstream
