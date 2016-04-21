@@ -133,6 +133,6 @@ delete_site(){
 # ---------------------------------------------------------------------
 # Prompt
 # ---------------------------------------------------------------------
-export PS1="$Brown\A - $DarkGreen\u:$BGreen\w$Reset$Green\$(parse_git_branch) - $Reset"
+export PS1="$Brown\A - $DarkGreen\u:$BGreen\w$Reset$Green\$(__git_ps1) - $Reset"
 export CLICOLOR=1
 export LSCOLORS=fxFxBxDxCxegedabagacad

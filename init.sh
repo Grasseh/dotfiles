@@ -85,6 +85,10 @@ echo "Done linking atom Config file"
 ln -sf ~/dotfiles/.bash_aliases ~/.bash_aliases;
 echo "Done linking Bash Aliases"  
 
+ln -sf ~/dotfiles/.git-prompt.sh ~/.git-prompt.sh;
+echo "Done linking Git Prompts"  
+
+
 echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
 rm -df tmp
