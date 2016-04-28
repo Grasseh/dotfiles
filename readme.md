@@ -8,6 +8,7 @@ To install, run the following commands in your terminal :
  
     cd ~
     git clone git@github.com:Grasseh/UbuntuDotfiles.git
+    mv ~/UbuntuDotFiles ~/dotfiles
     cd ~/dotfiles
     bash init.sh
     source .bash_profile
