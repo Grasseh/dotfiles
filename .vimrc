@@ -12,5 +12,8 @@ set shiftwidth=4
 set tabstop=4
 set ai "Auto-indent"
 set si "Smart-indent"
+let NERDTreeShowHidden=1
+"Remaps"
+map <C-n> :NERDTreeToggle<CR>
 "Pathogen"
 execute pathogen#infect()
