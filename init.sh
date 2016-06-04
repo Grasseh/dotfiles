@@ -68,6 +68,14 @@ else
     echo "LAMP is installed"
 fi
 
+if ! command -v "ruby" > /dev/null; then
+    echo "Ruby is not installed"
+    echo "Installing Ruby"
+    sudo apt-get -y install ruby-full
+else
+    echo "Ruby is installed"
+fi
+
 echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
 echo "Creating file symlinks"
