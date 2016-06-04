@@ -12,3 +12,5 @@ set shiftwidth=4
 set tabstop=4
 set ai "Auto-indent"
 set si "Smart-indent"
+"Pathogen"
+execute pathogen#infect()

@@ -96,6 +96,13 @@ echo "Done linking Bash Aliases"
 ln -sf ~/dotfiles/.git-prompt.sh ~/.git-prompt.sh;
 echo "Done linking Git Prompts"  
 
+mkdir -p ~/.vim
+ln -s ~/dotfiles/vim/autoload ~/.vim
+echo "Done linking Vim autoload"
+
+
+ln -s ~/dotfiles/vim/bundle ~/.vim
+echo "Done linking Vim bundles"
 
 echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
