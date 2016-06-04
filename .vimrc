@@ -13,6 +13,7 @@ set tabstop=4
 set ai "Auto-indent"
 set si "Smart-indent"
 let NERDTreeShowHidden=1
+set laststatus=2
 "Remaps"
 map <C-n> :NERDTreeToggle<CR>
 "Pathogen"
