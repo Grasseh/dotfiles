@@ -1,6 +1,6 @@
 # Grasseh's Ubuntu Dotfiles
 
-This repository contains my personal dotfiles for Ubuntu based systems. This should technically work or any Debian based system, but it only has been tested in a Ubuntu 15.04 environment.
+This repository contains my personal dotfiles for Ubuntu based systems. This should technically work or any Debian based system, but it only has been tested in a UbuntuMate 16.04 environment.
 
 ## Installation
 
