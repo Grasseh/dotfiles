@@ -29,6 +29,14 @@ else
     echo "Wget is already installed!"
 fi
 
+if ! command -v "composer" > /dev/null; then
+    echo "Composer is not installed." 
+    echo "Installing Composer"
+    sudo apt-get -y install composer 
+else
+    echo "Composer is already installed!"
+fi
+
 if ! command -v "atom" > /dev/null; then
     echo "Atom is not installed." 
     echo "Installing Atom"
