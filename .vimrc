@@ -14,6 +14,7 @@ set ai "Auto-indent"
 set si "Smart-indent"
 let NERDTreeShowHidden=1
 set laststatus=2
+let g:airline_theme='term'
 "Remaps"
 map <C-n> :NERDTreeToggle<CR>
 "Pathogen"
