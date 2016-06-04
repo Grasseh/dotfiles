@@ -1,6 +1,7 @@
 # ===========
-# Path
+# Path + Env Variable
 # ===========
+export TERM=xterm-256color
 export PATH=/usr/bin:/bin:/usr/local/bin:/usr/local/git/bin:
 # ---------------------------------------------------------------------
 # Git aliases

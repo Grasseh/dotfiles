@@ -1,9 +1,9 @@
 "Display"
-set background=dark
 set ruler     "Display current selected" 
 set showmatch "Matching Brackets"
 syntax enable
 set number
+colors zenburn
 "Behavior"
 set encoding=utf_8
 set expandtab

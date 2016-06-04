@@ -100,9 +100,11 @@ mkdir -p ~/.vim
 ln -s ~/dotfiles/vim/autoload ~/.vim
 echo "Done linking Vim autoload"
 
-
 ln -s ~/dotfiles/vim/bundle ~/.vim
 echo "Done linking Vim bundles"
+
+ln -s ~/dotfiles/vim/colors ~/.vim
+echo "Done linking Vim colors"
 
 echo "-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-"
 
