@@ -62,8 +62,9 @@ if ! command -v "mysql" > /dev/null; then
     echo "LAMP stack not installed"
     echo "Installing LAMP"
     sudo apt-get -y install apache2
-    sudo apt-get -y install php5
+    sudo apt-get -y install php7.0
     sudo apt-get -y install mysql-server 
+    sudo apt install -y libapache2-mod-php7.0
 else
     echo "LAMP is installed"
 fi
