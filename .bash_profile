@@ -32,6 +32,7 @@ alias grl='git reflog;'
 alias gp='git push;'
 alias gpod='git push origin dev;'
 alias gpom='git push origin master;'
+alias gplm='git push live master;'
 # branch
 alias gch="git checkout"
 alias gchb="git checkout -b"
@@ -83,6 +84,7 @@ alias home='cd ~'
 alias grasseh='cd ~/projects/grasseh.com'
 alias desktop='cd ~/Desktop'
 alias ets='cd ~/ets' 
+alias projects='cd ~/projects'
 # ---------------------------------------------------------------------
 # Default Editor
 # ---------------------------------------------------------------------

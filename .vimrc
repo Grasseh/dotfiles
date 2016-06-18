@@ -20,7 +20,8 @@ set splitright
 let NERDTreeShowHidden = 1
 "Remaps"
 map <C-n> :NERDTreeToggle<CR>
-nnoremap <UP> <C-W><C-J> "Map arrow keys to move around splits"
+"Map arrow keys to move around splits"
+nnoremap <UP> <C-W><C-J> 
 nnoremap <DOWN> <C-W><C-K>
 nnoremap <RIGHT> <C-W><C-L>
 nnoremap <LEFT> <C-W><C-H>
