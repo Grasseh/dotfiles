@@ -1,4 +1,5 @@
-. ~/.bash_aliases
-. ~/.git-prompt.sh
-. ~/.bash_profile
 
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

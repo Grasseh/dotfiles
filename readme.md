@@ -1,20 +1,37 @@
-# Grasseh's Ubuntu Dotfiles
+# Dotfiles
 
-This repository contains my personal dotfiles for Ubuntu based systems. This should technically work or any Debian based system, but it only has been tested in a UbuntuMate 16.04 environment.
+This is a simple repo where I can easily change and update my dotfiles.
 
 ## Installation
 
-To install, run the following commands in your terminal :
- 
-    cd ~
-    git clone git@github.com:Grasseh/UbuntuDotfiles.git
-    mv ~/UbuntuDotFiles ~/dotfiles
-    cd ~/dotfiles
-    bash init.sh
-    source .bash_profile
+    # open your terminal
 
-You need sudo rights to run some commands in the bash file. You may need to enter your sudo password during the execution of the scripts. You will need to enter a MySQL password during the execution. 
+    # go ~ if not already
+
+    cd ~
+
+    # clone my dotfiles
+
+    git clone https://github.com/grasseh/dotfiles.git
+
+    # run init.sh command
+
+    bash ~/dotfiles/init.sh
+
+    # source bash_profile to update your terminal
+
+    source ~/.bash_profile
+
+    # gg
+
+## Maintenance && Personalization
+
+If you want to add aliases, edit the file
+
+    ~/dotfiles/.bash_profile
+
+Don't forget to source .bash_profile after!
 
 ## Sources
-These dotfiles are based on my personal OSX dotfiles, which can be found at https://www.github.com/Grasseh/OSXDotfiles . 
-My OSX dotfiles were originally forked from https://www.github.com/franatieu/Dotfiles
+
+Initial dotfiles were forked from https://github.com/franatieu/dotfiles.git
