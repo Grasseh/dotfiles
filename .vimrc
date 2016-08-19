@@ -29,5 +29,8 @@ nnoremap <DOWN> <C-W><C-K>
 nnoremap <RIGHT> <C-W><C-L>
 nnoremap <LEFT> <C-W><C-H>
 map <C-p> :CtrlP<CR>
+:command W w
+:command Q q
+:command Wq wq
 "Pathogen"
 execute pathogen#infect()
