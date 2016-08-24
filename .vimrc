@@ -24,8 +24,8 @@ autocmd BufEnter * set rnu
 "Remaps"
 xnoremap p pgvy
 map <C-n> :NERDTreeToggle<CR>
-nnoremap <UP> <C-W><C-J> " Map arrow keys to move around splits
-nnoremap <DOWN> <C-W><C-K>
+nnoremap <UP> <C-W><C-K> " Map arrow keys to move around splits
+nnoremap <DOWN> <C-W><C-J>
 nnoremap <RIGHT> <C-W><C-L>
 nnoremap <LEFT> <C-W><C-H>
 map <C-p> :CtrlP<CR>
