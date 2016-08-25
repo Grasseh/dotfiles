@@ -5,6 +5,8 @@ set showmatch "Matching Brackets"
 syntax enable
 set number
 colors zenburn
+set hlsearch
+set incsearch
 "Behavior"
 set encoding=utf_8
 set expandtab
