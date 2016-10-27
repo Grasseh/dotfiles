@@ -106,13 +106,23 @@ else
 fi
 
 echo '...'
-if ! command -v "phpunit --version" > /dev/null; then
+if ! command -v "phpunit" > /dev/null; then
   echo 'PhpUnit is not installed'
   wget https://phar.phpunit.de/phpunit.phar
   chmod +x phpunit.phar
   sudo mv phpunit.phar /usr/local/bin/phpunit
 else
   echo "PhpUnit is installed"
+fi
+echo '...'
+
+if ! command -v "php-cs-fixer" > /dev/null; then
+  echo 'PHP CS Fixer is not installed'
+  wget http://get.sensiolabs.org/php-cs-fixer.phar -O php-cs-fixer
+  chmod a+x php-cs-fixer
+  sudo mv php-cs-fixer /usr/local/bin/php-cs-fixer
+else
+  echo "PHP CS Fixer is installed"
 fi
 
 echo '...'
