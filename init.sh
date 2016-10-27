@@ -34,17 +34,6 @@ else
 fi
 
 echo '...'
-if ! command -v "rvm" >/dev/null; then
-  echo 'rvm is not installed'
-  echo 'installing...'
-  echo '.'
-  \curl -sSL https://get.rvm.io | bash -s stable --ruby
-  echo '.'
-else
-  echo 'rvm is installed'
-fi
-
-echo '...'
 if ! command -v "brew" > /dev/null; then
   echo 'Homebrew is not installed'
   echo 'Installing...'
