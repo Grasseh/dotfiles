@@ -65,6 +65,7 @@ alias gts='git tag show'
 alias gta='git tag -a'
 # diff
 alias gd='git diff'
+alias gdw='git diff -w'
 alias gdc='git diff --cached'
 #bisect
 alias gbi="git bisect"
