@@ -86,6 +86,8 @@ alias editbash='sudo nano ~/.bash_profile'
 alias dotfiles='cd ~/dotfiles'
 alias projects='cd ~/projects/'
 alias ..='cd ..'
+alias ...='cd ..; cd ..;'
+alias ....='cd ..; cd ..;cd ..;'
 alias la='ls -als'
 alias edit='subl'
 alias ~="cd ~"
@@ -115,6 +117,7 @@ alias ca='composer dumpautoload'
 alias ci='composer install'
 alias cu='composer update'
 alias cr='composer require'
+alias pcf='php-cs-fixer fix --config-file styler.php_cs'
 
 # ---------------------------------------------------------------------
 # Directory aliases
