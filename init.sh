@@ -237,5 +237,21 @@ else
   echo 'SSH key found'
 fi
 
+if ! command -v "tmux" > /dev/null; then
+    echo "Tmux is not installed"
+    echo "Installing Libevent"
+    brew install libevent
+    echo "Installing tmux"
+    wget -P tmp/ https://github.com/tmux/tmux/releases/download/2.3/tmux-2.3.tar.gz
+    tar -C tmp/ -xzf tmp/tmux-2.3.tar.gz
+    cd ~/dotfiles/tmp/tmux-2.3
+    ./configure
+    make
+    make install
+    cd ~/dotfiles
+    echo "Done installing tmux"
+else
+    echo "Tmux is installed"
+fi
 
 echo '...'
