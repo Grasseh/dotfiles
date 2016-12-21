@@ -7,6 +7,7 @@ export PATH=/Applications/MAMP/bin/php/php5.6.2/bin:$PATH
 export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/etc/Caskroom"
 export PATH="$PATH:$HOME/npm/bin"
 export NODE_PATH="$NODE_PATH:$HOME/npm/lib/node_modules"
+export TERM="xterm-256color"
 #---------------------------------------------------------------------
 # Git aliases
 # ---------------------------------------------------------------------
@@ -112,14 +113,20 @@ alias cod='open ~/Documents/Call\ of\ Duty\ 4/Call\ of\ Duty\ 4\ Multiplayer.app
 alias doc='open doc/index.html'
 alias notes='vim ~/notes.MD'
 alias todo='vim ~/todo.MD'
-alias cpanekapi='cp ~/projects/anek/api-anek-js/dist/anek-dash.min.js ~/projects/anek/anekdotes-php/public/assets/lib/anekdotes-dashboard/anek-dash.min.js;cp ~/projects/anek/api-anek-js/dist/anek-dash.css ~/projects/anek/anekdotes-php/public/assets/lib/anekdotes-dashboard/anek-dash.css'
 alias pu='phpunit'
 alias ca='composer dumpautoload'
 alias ci='composer install'
 alias cu='composer update'
 alias cr='composer require'
 alias pcf='php-cs-fixer fix --config-file styler.php_cs'
-
+# ---------------------------------------------------------------------
+# Anekdotes aliases
+# ---------------------------------------------------------------------
+alias ancpapi='cp ~/projects/anek/api-anek-js/dist/anek-dash.min.js ~/projects/anek/anekdotes-php/public/assets/lib/anekdotes-dashboard/anek-dash.min.js;cp ~/projects/anek/api-anek-js/dist/anek-dash.css ~/projects/anek/anekdotes-php/public/assets/lib/anekdotes-dashboard/anek-dash.css'
+alias anm='php sb db:migrate'
+alias ans='php sb db:seed'
+alias anom='php sb db migrate'
+alias anos='php sb db seed'
 # ---------------------------------------------------------------------
 # Directory aliases
 # ---------------------------------------------------------------------
