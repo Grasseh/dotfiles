@@ -38,7 +38,7 @@ alias gsi='git submodule init; git submodule update'
 alias gsu='git submodule sync; git submodule update'
 alias gss='git submodule sync'
 # push
-alias gp='git push;'
+alias gp='git push'
 alias gpod='git push origin dev;'
 alias gpom='git push origin master;'
 alias gpu='git push -u'
@@ -55,7 +55,9 @@ alias gch="git checkout"
 alias gchb="git checkout -b"
 alias gb="git branch"
 alias gba='git branch -a'
-alias gbd='git branch -D'
+alias gbd='git branch -d'
+alias gbD='git branch -D'
+alias gbod='git push origin --delete'
 # stash
 alias gsh='git stash'
 alias gshp='git stash pop'
