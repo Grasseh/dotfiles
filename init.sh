@@ -5,6 +5,10 @@ defaults write com.apple.finder AppleShowAllFiles YES.
 echo 'Showing hidden files done'
 
 echo '...'
+ln -sf ~/dotfiles/welcome ~/welcome;
+echo 'welcome link done'
+
+echo '...'
 ln -sf ~/dotfiles/.bash_profile ~/.bash_profile;
 echo '.bash_profile link done'
 
