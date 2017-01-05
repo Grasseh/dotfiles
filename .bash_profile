@@ -158,10 +158,28 @@ if [ -f ~/.env ]; then
   source ~/.env
 fi
 
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+#-=-=-=-=-=-=-=-=-COLORS=-=-=-=-=-=-=-=-=-#
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+
+#Reset -- This Reset all the current colors set
+export RESET="$(tput sgr0)"
+
+#Base Colors
+export BROWN="$(tput setaf 94)"
+export DARKGREEN="$(tput setaf 64)"
+export GREEN="$(tput setaf 40)"
+export PURPLE="$(tput setaf 99)"
+export LILAC="$(tput setaf 94)"
+export BLUE="$(tput setaf 51)"
+
+#Bold Colors
+export BOLD="$(tput bold)"
+
 # ---------------------------------------------------------------------
 # Prompt
 # ---------------------------------------------------------------------
-export PS1="\n\[\033[36m\]\A - \u\[\033[m\]:\[\033[33;1m\]\w\[\033[m\] \[\033[32m\]\$(parse_git_branch)\[\033[m\] "
+export PS1="\n\[$PURPLE\]\A - \u\[$GREEN\]:\[$BOLD\]\[$LILAC\]\w\[$RESET\]\[$BLUE\] $(parse_git_branch) \[$RESET\] "
 export CLICOLOR=1
 export LSCOLORS=fxFxBxDxCxegedabagacad
 
