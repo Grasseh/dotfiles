@@ -1,8 +1,7 @@
-
 # ---------------------------------------------------------------------
 # Same PATH
 # ---------------------------------------------------------------------
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Users/Master/bin:~/.composer/vendor/bin:/Users/stevegagne/pear/bin
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Users/Master/bin:~/.composer/vendor/bin:/Users/stevegagne/pear/bin:
 export PATH=/Applications/MAMP/bin/php/php5.6.2/bin:$PATH
 export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/etc/Caskroom"
 export PATH="$PATH:$HOME/npm/bin"
@@ -120,6 +119,7 @@ alias ci='composer install'
 alias cu='composer update'
 alias cr='composer require'
 alias pcf='php-cs-fixer fix --config-file styler.php_cs'
+alias brails='bin/rails'
 # ---------------------------------------------------------------------
 # Anekdotes aliases
 # ---------------------------------------------------------------------
@@ -129,6 +129,7 @@ alias ans='php sb db:seed'
 alias anr='php sb db:rollback'
 alias anom='php sb db migrate'
 alias anos='php sb db seed'
+alias curlrest='curl -v -H "Accept: application/json" -H "Content-type: application/json" -X'
 # ---------------------------------------------------------------------
 # Directory aliases
 # ---------------------------------------------------------------------
@@ -160,7 +161,7 @@ fi
 # ---------------------------------------------------------------------
 # Prompt
 # ---------------------------------------------------------------------
-export PS1="\[\033[36m\]\A - \u\[\033[m\]:\[\033[33;1m\]\w\[\033[m\] \[\033[32m\]\$(parse_git_branch)\[\033[m\] "
+export PS1="\n\[\033[36m\]\A - \u\[\033[m\]:\[\033[33;1m\]\w\[\033[m\] \[\033[32m\]\$(parse_git_branch)\[\033[m\] "
 export CLICOLOR=1
 export LSCOLORS=fxFxBxDxCxegedabagacad
 
