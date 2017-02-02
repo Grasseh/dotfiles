@@ -180,7 +180,7 @@ export BOLD="$(tput bold)"
 # ---------------------------------------------------------------------
 # Prompt
 # ---------------------------------------------------------------------
-export PS1="\n\[$PURPLE\]\A - \u\[$GREEN\]:\[$BOLD\]\[$LILAC\]\w\[$RESET\]\[$BLUE\] \$(parse_git_branch) \[$RESET\] "
+export PS1="\n\[$PURPLE\]\A - \u@\h\[$GREEN\]:\[$BOLD\]\[$LILAC\]\w\[$RESET\]\[$BLUE\] \$(parse_git_branch) \[$RESET\] "
 export CLICOLOR=1
 export LSCOLORS=fxFxBxDxCxegedabagacad
 
