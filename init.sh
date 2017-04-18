@@ -1,8 +1,16 @@
 #!/bin/bash
 
-echo '...'
+echo 'Showing hidden files'
 defaults write com.apple.finder AppleShowAllFiles YES.
 echo 'Showing hidden files done'
+
+echo 'Increasing Trackpad scaling'
+defaults write -g com.apple.trackpad.scaling -float 5.0
+echo 'Increasing Trackpad scaling done'
+
+echo 'Increasing mouse scaling'
+defaults write -g com.apple.mouse.scaling 3
+echo 'Increasing mouse scaling done'
 
 echo '...'
 ln -sf ~/dotfiles/welcome ~/welcome;
@@ -160,18 +168,6 @@ if ! command -v "bower-installer" >/dev/null; then
   echo '.'
 else
   echo 'bower-installer is installed'
-fi
-
-echo '...'
-if ! command -v "mongod" >/dev/null; then
-  echo 'mongodb is not installed'
-  echo 'installing...'
-  echo '.'
-  brew install mongodb
-  sudo mkdir -p /data/db
-  echo '.'
-else
-  echo 'mongod is installed'
 fi
 
 echo '...'
