@@ -4,10 +4,12 @@ cat ~/welcome
 # ---------------------------------------------------------------------
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Users/Master/bin:~/.composer/vendor/bin:/Users/stevegagne/pear/bin:
 export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/etc/Caskroom"
+export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:$HOME/npm/bin"
 export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
 export NODE_PATH="$NODE_PATH:$HOME/npm/lib/node_modules"
 export TERM="xterm-256color"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 #---------------------------------------------------------------------
 # Git aliases
 # ---------------------------------------------------------------------

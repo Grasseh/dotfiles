@@ -5,8 +5,10 @@ set showmatch "Matching Brackets"
 syntax enable
 set number
 colors zenburn
+let g:airline_theme='wombat'
 set hlsearch
 set incsearch
+set showcmd
 "Behavior"
 set encoding=utf_8
 set expandtab
@@ -34,5 +36,9 @@ map <C-p> :CtrlP<CR>
 :command W w
 :command Q q
 :command Wq wq
+:let mapleader = " "
+"Leader commands"
+vmap <leader>y :w! /tmp/vitmp<CR>                                                                   
+nmap <leader>p :r! cat /tmp/vitmp<CR>
 "Pathogen"
 execute pathogen#infect()
