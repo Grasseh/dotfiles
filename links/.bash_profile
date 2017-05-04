@@ -1,15 +1,11 @@
-cat ~/welcome
+# ---------------------------------------------------------------------
+# Distro Specific Bash_profile stuff
+# ---------------------------------------------------------------------
+source ~/.bash_aliases
+cat ~/.welcome
 # ---------------------------------------------------------------------
 # Same PATH
 # ---------------------------------------------------------------------
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/Users/Master/bin:~/.composer/vendor/bin:/Users/stevegagne/pear/bin:
-export HOMEBREW_CASK_OPTS="--appdir=/Applications --caskroom=/etc/Caskroom"
-export NVM_DIR="$HOME/.nvm"
-export PATH="$PATH:$HOME/npm/bin"
-export PATH="$(brew --prefix homebrew/php/php70)/bin:$PATH"
-export NODE_PATH="$NODE_PATH:$HOME/npm/lib/node_modules"
-export TERM="xterm-256color"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 #---------------------------------------------------------------------
 # Git aliases
 # ---------------------------------------------------------------------
@@ -150,9 +146,6 @@ alias anek='cd ~/projects/anek'
 sass_example() {
   echo 'sass --watch assets/scss:assets/css --style compressed';
 }
-parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
 
 # ---------------------------------------------------------------------
 # Source local machine config
@@ -165,24 +158,10 @@ fi
 #-=-=-=-=-=-=-=-=-COLORS=-=-=-=-=-=-=-=-=-#
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
 
-#Reset -- This Reset all the current colors set
-export RESET="$(tput sgr0)"
-
-#Base Colors
-export BROWN="$(tput setaf 94)"
-export DARKGREEN="$(tput setaf 64)"
-export GREEN="$(tput setaf 40)"
-export PURPLE="$(tput setaf 99)"
-export LILAC="$(tput setaf 94)"
-export BLUE="$(tput setaf 51)"
-
-#Bold Colors
-export BOLD="$(tput bold)"
-
 # ---------------------------------------------------------------------
 # Prompt
 # ---------------------------------------------------------------------
-export PS1="\n\[$PURPLE\]\A - \u@\h\[$GREEN\]:\[$BOLD\]\[$LILAC\]\w\[$RESET\]\[$BLUE\] \$(parse_git_branch) \[$RESET\] "
+export PS1="\n\[$CPRIMARY\]\A - \u@\h\[$CSECONDARY\]:\[$BOLD\]\[$TERTIARY\]\w\[$RESET\]\[$GIT\] \[$GITBRANCH\] \[$RESET\] "
 export CLICOLOR=1
 export LSCOLORS=fxFxBxDxCxegedabagacad
 
