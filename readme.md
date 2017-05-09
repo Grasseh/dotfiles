@@ -1,37 +1,20 @@
-# Dotfiles
+# Grasseh's Dotfiles
 
-This is a simple repo where I can easily change and update my dotfiles.
+This repository contains my personal dotfiles for UNIX based systems. These are fully tested on Ubuntu and should be functional on OSX. 
 
 ## Installation
 
-    # open your terminal
-
-    # go ~ if not already
-
+To install, run the following commands in your terminal :
+ 
     cd ~
-
-    # clone my dotfiles
-
-    git clone https://github.com/grasseh/dotfiles.git
-
-    # run init.sh command
-
-    bash ~/dotfiles/init.sh
-
-    # source bash_profile to update your terminal
-
+    git clone git@github.com:Grasseh/dotfiles.git
+    cd ~/dotfiles
+    bash init.sh
     source ~/.bash_profile
 
-    # gg
-
-## Maintenance && Personalization
-
-If you want to add aliases, edit the file
-
-    ~/dotfiles/.bash_profile
-
-Don't forget to source .bash_profile after!
+You need sudo rights to run some commands in the bash file. 
+You may need to enter your sudo password during the execution of the scripts. 
+You will need to enter a MySQL password during the execution, if on Ubuntu. 
 
 ## Sources
-
-Initial dotfiles were forked from https://github.com/franatieu/dotfiles.git
+My OSX dotfiles were originally forked from https://www.github.com/franatieu/Dotfiles. They've been heavily edited since.
