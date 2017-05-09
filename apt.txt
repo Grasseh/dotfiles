@@ -1,0 +1,6 @@
+vim
+curl
+wget
+composer
+ruby-full
+fortune

@@ -1,0 +1,6 @@
+https://github.com/kien/ctrlp.vim
+https://github.com/scrooloose/nerdtree
+https://github.com/bling/vim-airline
+https://github.com/vim-airline/vim-airline-themes
+https://github.com/sheerun/vim-polyglot
+https://github.com/plasticboy/vim-markdown.git
