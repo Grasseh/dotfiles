@@ -20,6 +20,9 @@ set si "Smart-indent"
 set splitbelow
 set splitright
 let NERDTreeShowHidden = 1
+set laststatus=2
+set splitbelow
+set splitright
 "Relative Numbers"
 set relativenumber
 let NERDTreeShowLineNumbers=1 "Display relatives in nerdtree too"
@@ -43,3 +46,5 @@ vmap <leader>y :w! /tmp/vitmp<CR>
 nmap <leader>p :r! cat /tmp/vitmp<CR>
 "Pathogen"
 execute pathogen#infect()
+syntax on
+filetype plugin indent on

@@ -38,4 +38,11 @@ cd ..
 
 # Software
 
+## Apt
+
+## Brew
+
+## Curl
+
+## Vim
 

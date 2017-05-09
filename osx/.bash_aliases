@@ -43,3 +43,30 @@ export CSECONDARY="$GREEN"
 export CTERTIARY="$LILAC"
 export CGIT="$BLUE"
 export GITBRANCH="$(parse_git_branch)"
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+#-=-=-=-=-=-=-=-=ANEKDOTES=-=-=-=-=-=-=-=-#
+#-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
+alias ancpapi='cp ~/projects/anek/api-anek-js/dist/anek-dash.min.js ~/projects/anek/anekdotes-php/public/assets/lib/anekdotes-dashboard/anek-dash.min.js;cp ~/projects/anek/api-anek-js/dist/anek-dash.css ~/projects/anek/anekdotes-php/public/assets/lib/anekdotes-dashboard/anek-dash.css'
+alias anm='php sb db:migrate'
+alias ans='php sb db:seed'
+alias anr='php sb db:rollback'
+alias anom='php sb db migrate'
+alias anos='php sb db seed'
+alias curlrest='curl -v -H "Accept: application/json" -H "Content-type: application/json" -X'
+alias sitebase='cd ~/projects/anek/sitebase-div'
+alias transax='cd ~/projects/transax'
+alias api='cd ~/projects/anek/api-anek-js'
+alias anek='cd ~/projects/anek'
+sass_example() {
+  echo 'sass --watch assets/scss:assets/css --style compressed';
+}
+alias flushdns='dscacheutil -flushcache;sudo killall -HUP mDNSResponder;say flushed;echo "DNS FLUSHED"'
+alias finderShowHidden='defaults write com.apple.finder ShowAllFiles TRUE'
+alias finderHideHidden='defaults write com.apple.finder ShowAllFiles FALSE'
+alias sass='sass --watch scss:css --style compressed'
+alias cleanupDS="find . -type f -name '*.DS_Store' -ls -delete"
+alias sleep='pmset sleepnow'
+alias phpdoc='phpdocumentor -d src -d app -t doc --cache-folder="doc/cache"'
+alias doc='open doc/index.html'
+alias pcf='php-cs-fixer fix --config-file styler.php_cs'
+alias bed='sleepnow'

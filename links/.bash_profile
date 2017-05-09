@@ -3,9 +3,6 @@
 # ---------------------------------------------------------------------
 source ~/.bash_aliases
 cat ~/.welcome
-# ---------------------------------------------------------------------
-# Same PATH
-# ---------------------------------------------------------------------
 #---------------------------------------------------------------------
 # Git aliases
 # ---------------------------------------------------------------------
@@ -84,32 +81,17 @@ alias grer="git remote remove"
 # Other aliases
 # ---------------------------------------------------------------------
 alias sourcebash='source ~/.bash_profile'
-alias editbash='sudo nano ~/.bash_profile'
-alias dotfiles='cd ~/dotfiles'
-alias projects='cd ~/projects/'
 alias ..='cd ..'
 alias ...='cd ..; cd ..;'
 alias ....='cd ..; cd ..;cd ..;'
 alias la='ls -als'
-alias edit='subl'
 alias ~="cd ~"
 alias c='clear'
 alias path='echo -e ${PATH//:/\\n}'
 alias rmr='sudo rm -R'
-alias flushdns='dscacheutil -flushcache;sudo killall -HUP mDNSResponder;say flushed;echo "DNS FLUSHED"'
-alias cleanupDS="find . -type f -name '*.DS_Store' -ls -delete"
-alias finderShowHidden='defaults write com.apple.finder ShowAllFiles TRUE'
-alias finderHideHidden='defaults write com.apple.finder ShowAllFiles FALSE'
 alias composerinstall='composer install --prefer-dist'
-alias npm='sudo npm'
-alias sleep='pmset sleepnow'
-alias bed='sleepnow'
 alias reload='. ~/.bash_profile'
 alias gitgud='echo "[ ] not rekt  [x] rekt"'
-alias phpdoc='phpdocumentor -d src -d app -t doc --cache-folder="doc/cache"'
-alias sass='sass --watch scss:css --style compressed'
-alias cod='open ~/Documents/Call\ of\ Duty\ 4/Call\ of\ Duty\ 4\ Multiplayer.app/'
-alias doc='open doc/index.html'
 alias notes='vim ~/notes.MD'
 alias todo='vim ~/todo.MD'
 alias pu='phpunit'
@@ -117,42 +99,15 @@ alias ca='composer dumpautoload'
 alias ci='composer install'
 alias cu='composer update'
 alias cr='composer require'
-alias pcf='php-cs-fixer fix --config-file styler.php_cs'
 alias brails='bin/rails'
-# ---------------------------------------------------------------------
-# Anekdotes aliases
-# ---------------------------------------------------------------------
-alias ancpapi='cp ~/projects/anek/api-anek-js/dist/anek-dash.min.js ~/projects/anek/anekdotes-php/public/assets/lib/anekdotes-dashboard/anek-dash.min.js;cp ~/projects/anek/api-anek-js/dist/anek-dash.css ~/projects/anek/anekdotes-php/public/assets/lib/anekdotes-dashboard/anek-dash.css'
-alias anm='php sb db:migrate'
-alias ans='php sb db:seed'
-alias anr='php sb db:rollback'
-alias anom='php sb db migrate'
-alias anos='php sb db seed'
-alias curlrest='curl -v -H "Accept: application/json" -H "Content-type: application/json" -X'
 # ---------------------------------------------------------------------
 # Directory aliases
 # ---------------------------------------------------------------------
 alias home='cd ~'
-alias sitebase='cd ~/projects/anek/sitebase-div'
-alias transax='cd ~/projects/transax'
-alias api='cd ~/projects/anek/api-anek-js'
 alias grasseh='cd ~/projects/grasseh.com'
 alias desktop='cd ~/Desktop'
-alias anek='cd ~/projects/anek'
-
-# ---------------------------------------------------------------------
-# Functions
-# ---------------------------------------------------------------------
-sass_example() {
-  echo 'sass --watch assets/scss:assets/css --style compressed';
-}
-
-# ---------------------------------------------------------------------
-# Source local machine config
-# ---------------------------------------------------------------------
-if [ -f ~/.env ]; then
-  source ~/.env
-fi
+alias dotfiles='cd ~/dotfiles'
+alias projects='cd ~/projects/'
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
 #-=-=-=-=-=-=-=-=-COLORS=-=-=-=-=-=-=-=-=-#
