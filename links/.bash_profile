@@ -116,7 +116,21 @@ alias projects='cd ~/projects/'
 # ---------------------------------------------------------------------
 # Prompt
 # ---------------------------------------------------------------------
-export PS1="\n\[$CPRIMARY\]\A - \u@\h\[$CSECONDARY\]:\[$BOLD\]\[$TERTIARY\]\w\[$RESET\]\[$GIT\] \[$GITBRANCH\] \[$RESET\] "
+prompt_cmd () {
+    LAST_STATUS=$?
+    PS1="\n\[$CPRIMARY\]\A - "
+    PS1+="\u@\h\[$CSECONDARY\]:"
+    PS1+="\[$BOLD\]\[$TERTIARY\]\w"
+    PS1+="\[$RESET\]\[$GIT\] "
+    if  [[ $(uname -a | grep "Ubuntu") ]]; then
+        PS1+="$(__git_ps1)"
+    fi
+    if  [[ $(uname -a | grep "Darwin") ]]; then
+        PS1+="$(parse_git_branch)"
+    fi
+    PS1+=" \[$RESET\] "
+}
+PROMPT_COMMAND='prompt_cmd'
 export CLICOLOR=1
 export LSCOLORS=fxFxBxDxCxegedabagacad
 

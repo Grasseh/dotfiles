@@ -42,7 +42,6 @@ export CPRIMARY="$PURPLE"
 export CSECONDARY="$GREEN"
 export CTERTIARY="$LILAC"
 export CGIT="$BLUE"
-export GITBRANCH="$(parse_git_branch)"
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
 #-=-=-=-=-=-=-=-=ANEKDOTES=-=-=-=-=-=-=-=-#
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#

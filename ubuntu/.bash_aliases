@@ -35,7 +35,6 @@ export CPRIMARY="$BROWN"
 export CSECONDARY="$DARKGREEN"
 export CTERTIARY="$GREEN"
 export CGIT="$BLUE"
-export GITBRANCH="$(__git_ps1)"
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
 #-=-=-=-=-=-=-=-GIT PROMPT=-=-=-=-=-=-=-=-#
