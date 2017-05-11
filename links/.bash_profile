@@ -120,7 +120,7 @@ prompt_cmd () {
     LAST_STATUS=$?
     PS1="\n\[$CPRIMARY\]\A - "
     PS1+="\u@\h\[$CSECONDARY\]:"
-    PS1+="\[$BOLD\]\[$TERTIARY\]\w"
+    PS1+="\[$BOLD\]\[$CTERTIARY\]\w"
     PS1+="\[$RESET\]\[$GIT\] "
     if  [[ $(uname -a | grep "Ubuntu") ]]; then
         PS1+="$(__git_ps1)"
