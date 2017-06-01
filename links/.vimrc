@@ -44,6 +44,8 @@ map <C-p> :CtrlP<CR>
 "Leader commands"
 vmap <leader>y :w! /tmp/vitmp<CR>                                                                   
 nmap <leader>p :r! cat /tmp/vitmp<CR>
+nmap <leader>sp :set paste<CR>
+nmap <leader>snp :set nopaste<CR>
 "Pathogen"
 execute pathogen#infect()
 syntax on
