@@ -22,6 +22,9 @@ OS="None"
 if  [[ $(uname -a | grep "Ubuntu") ]]; then
     OS="ubuntu"
 fi
+if  [[ $(uname -a | grep "Linux") ]]; then
+    OS="ubuntu"
+fi
 if  [[ $(uname -a | grep "Darwin") ]]; then
     OS="osx"
 fi
