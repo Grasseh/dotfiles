@@ -7,7 +7,7 @@ fortune
 # ===========
 export TERM=xterm-256color
 export PATH=/usr/bin:/bin:/usr/local/bin:/usr/local/git/bin
-export PATH=$PATH:/home/grasseh/bin
+export PATH=/home/grasseh/bin:$PATH
 export PATH=$PATH:/usr/local/heroku/bin:/usr/bin/node
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/usr/games

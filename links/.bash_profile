@@ -125,6 +125,9 @@ prompt_cmd () {
     if  [[ $(uname -a | grep "Ubuntu") ]]; then
         PS1+="$(__git_ps1)"
     fi
+    if  [[ $(uname -a | grep "Linux") ]]; then
+        PS1+="$(__git_ps1)"
+    fi
     if  [[ $(uname -a | grep "Darwin") ]]; then
         PS1+="$(parse_git_branch)"
     fi
