@@ -23,6 +23,7 @@ let NERDTreeShowHidden = 1
 set laststatus=2
 set splitbelow
 set splitright
+set backspace=indent,eol,start
 "Relative Numbers"
 set relativenumber
 let NERDTreeShowLineNumbers=1 "Display relatives in nerdtree too"
