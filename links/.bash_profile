@@ -80,33 +80,33 @@ alias grer="git remote remove"
 # ---------------------------------------------------------------------
 # Other aliases
 # ---------------------------------------------------------------------
-alias sourcebash='source ~/.bash_profile'
 alias ..='cd ..'
 alias ...='cd ..; cd ..;'
 alias ....='cd ..; cd ..;cd ..;'
-alias la='ls -alsh'
 alias ~="cd ~"
+alias brails='bin/rails'
 alias c='clear'
-alias path='echo -e ${PATH//:/\\n}'
-alias rmr='sudo rm -R'
-alias composerinstall='composer install --prefer-dist'
-alias reload='. ~/.bash_profile'
-alias gitgud='echo "[ ] not rekt  [x] rekt"'
-alias notes='vim ~/notes.MD'
-alias todo='vim ~/todo.MD'
-alias pu='phpunit'
 alias ca='composer dumpautoload'
 alias ci='composer install'
-alias cu='composer update'
 alias cr='composer require'
-alias brails='bin/rails'
+alias cu='composer update'
+alias ft='printf "\e[?2004l"' #Fix terminal pasting
+alias gitgud='echo "[ ] not rekt  [x] rekt"'
+alias la='ls -alsh'
+alias notes='vim ~/notes.MD'
+alias path='echo -e ${PATH//:/\\n}'
+alias pu='phpunit'
+alias reload='. ~/.bash_profile'
+alias rmr='sudo rm -R'
+alias sourcebash='source ~/.bash_profile'
+alias todo='vim ~/todo.MD'
 # ---------------------------------------------------------------------
 # Directory aliases
 # ---------------------------------------------------------------------
-alias home='cd ~'
-alias grasseh='cd ~/projects/grasseh.com'
 alias desktop='cd ~/Desktop'
 alias dotfiles='cd ~/dotfiles'
+alias grasseh='cd ~/projects/grasseh.com'
+alias home='cd ~'
 alias projects='cd ~/projects/'
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
