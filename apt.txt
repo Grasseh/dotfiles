@@ -4,6 +4,7 @@ wget
 composer
 ruby-full
 fortune
+screenfetch
 apache2
 php7.0
 mysql-server
