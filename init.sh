@@ -75,6 +75,7 @@ if  [[ "$OS" == "osx" ]]; then
 fi
 
 ## Vim
+mkdir ~/.vim/bundle
 cd ~/.vim/bundle
 while read v; do
     git clone $v 
