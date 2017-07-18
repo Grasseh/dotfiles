@@ -122,9 +122,6 @@ prompt_cmd () {
     PS1+="\u@\h\[$CSECONDARY\]:"
     PS1+="\[$BOLD\]\[$CTERTIARY\]\w"
     PS1+="\[$RESET\]\[$GIT\] "
-    if  [[ $(uname -a | grep "Ubuntu") ]]; then
-        PS1+="$(__git_ps1)"
-    fi
     if  [[ $(uname -a | grep "Linux") ]]; then
         PS1+="$(__git_ps1)"
     fi
