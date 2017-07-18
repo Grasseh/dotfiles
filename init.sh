@@ -34,6 +34,7 @@ fi
 #!?!?!?!?!?!?!?!?!?!?!?!
 cd links 
 shopt -s dotglob
+# TODO : Handle folders to symlink
 for file in *
 do
     ln -sf ~/dotfiles/links/$file ~/$file
