@@ -24,6 +24,8 @@ set laststatus=2
 set splitbelow
 set splitright
 set backspace=indent,eol,start
+syntax on
+filetype plugin indent on
 "Relative Numbers"
 set relativenumber
 let NERDTreeShowLineNumbers=1 "Display relatives in nerdtree too"
@@ -49,5 +51,10 @@ nmap <leader>sp :set paste<CR>
 nmap <leader>snp :set nopaste<CR>
 "Pathogen"
 execute pathogen#infect()
-syntax on
-filetype plugin indent on
+"Ale"
+let g:airline#extensions#ale#enabled = 1
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_open_list = 1
+let g:ale_list_window_size = 3
