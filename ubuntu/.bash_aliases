@@ -42,6 +42,7 @@ export CGIT="$BLUE"
 GIT_PS1_SHOWDIRTYSTATE="kk" #Display a * If there's a modified/deleted file
 GIT_PS1_SHOWUNTRACKEDFILES="kk" #Display a % if there's an untracked file in the director
 GIT_PS1_SHOWUPSTREAM="verbose name" #Show Difference with Upstream
+GIT_PS1_SHOWCOLORHINTS="kk" #Add colors?
 
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
