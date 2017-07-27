@@ -42,9 +42,6 @@ alias gphdm='git push heroku dev:master'
 alias gphm='git push heroku master'
 alias gpldm='git push live dev:master'
 alias gplm='git push live master'
-alias gpum='git push userver master'
-alias gpud='git push userver dev'
-alias gpur='git push userver rc'
 # branch
 alias gch="git checkout"
 alias gchb="git checkout -b"
