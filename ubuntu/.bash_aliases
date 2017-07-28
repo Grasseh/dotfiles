@@ -12,6 +12,9 @@ export PATH=$PATH:/usr/local/heroku/bin:/usr/bin/node
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/usr/games
 export PATH=$PATH:$HOME/.config/composer/vendor/bin
+export PATH=$PATH:/usr/sbin
+export PATH=$PATH:/sbin
+export PATH=$PATH:/usr/local/sbin
 export GOPATH=$HOME/projects/go
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
