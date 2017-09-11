@@ -1,6 +1,6 @@
 "Display"
 set background=dark
-set ruler     "Display current selected" 
+set ruler     "Display current selected"
 set showmatch "Matching Brackets"
 syntax enable
 set number
@@ -45,7 +45,7 @@ map <C-p> :CtrlP<CR>
 :command Wqa wqa
 :let mapleader = " "
 "Leader commands"
-vmap <leader>y :w! /tmp/vitmp<CR>                                                                   
+vmap <leader>y :w! /tmp/vitmp<CR>
 nmap <leader>p :r! cat /tmp/vitmp<CR>
 nmap <leader>sp :set paste<CR>
 nmap <leader>snp :set nopaste<CR>

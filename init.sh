@@ -32,7 +32,7 @@ fi
 #!?!?!?!?!?!?!?!?!?!?!?!
 # Symlimks
 #!?!?!?!?!?!?!?!?!?!?!?!
-cd links 
+cd links
 shopt -s dotglob
 # TODO : Handle folders to symlink
 for file in *
@@ -61,7 +61,7 @@ fi
 ## Apt
 if  [[ "$OS" == "ubuntu" ]]; then
     while read v; do
-        sudo apt install -y $v 
+        sudo apt install -y $v
     done <~/dotfiles/apt.txt
 fi
 
@@ -69,7 +69,7 @@ fi
 if  [[ "$OS" == "osx" ]]; then
 	bash osx/install.sh
     while read v; do
-        brew install $v 
+        brew install $v
     done <~/dotfiles/brew.txt
 fi
 
@@ -77,7 +77,7 @@ fi
 mkdir ~/.vim/bundle
 cd ~/.vim/bundle
 while read v; do
-    git clone $v 
+    git clone $v
 done <~/dotfiles/vim_plugins.txt
 
 #!?!?!?!?!?!?!?!?!?!?!?!
