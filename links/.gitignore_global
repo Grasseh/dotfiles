@@ -1,2 +1,15 @@
+###########################################################################
+#    .
+#   /|\
+#  / |/\
+# | \|'.|
+# \.'|/ /
+#  \'|'/
+#   `|´
+#    |
+# This file was written by Steve "Grasseh" Gagné and can be reused for free.
+# It contains file types that are ignore globally by git
+# (as long as the excludesfiles command in .gitconfig is not changed)
+############################################################################
 .DS_Store
 .*.swp

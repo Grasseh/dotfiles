@@ -1,4 +1,4 @@
-########################################################################
+############################################################################
 #    .
 #   /|\
 #  / |/\
@@ -7,9 +7,9 @@
 #  \'|'/
 #   `|´
 #    |
-# This file was written by Steve "Grasseh" Gagné and is free of reuse.
+# This file was written by Steve "Grasseh" Gagné and can be reused for free.
 # It contains additionnal installation steps for OSX based systems.
-#########################################################################
+############################################################################
 if ! command -v "brew" > /dev/null; then
   echo 'Homebrew is not installed'
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"

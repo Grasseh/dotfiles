@@ -1,6 +1,6 @@
 #!/bin/bash
 
-########################################################################
+###########################################################################
 #    .
 #   /|\
 #  / |/\
@@ -9,10 +9,10 @@
 #  \'|'/
 #   `|´
 #    |
-# This file was written by Steve "Grasseh" Gagné and is free of reuse.
+# This file was written by Steve "Grasseh" Gagné and can be reused for free.
 # It contains commands to be ran on all UNIX system.
 # It also includes links to other files to be called during installation.
-#########################################################################
+############################################################################
 
 #!?!?!?!?!?!?!?!?!?!?!?!
 # Os Setup

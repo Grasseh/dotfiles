@@ -1,3 +1,15 @@
+"##########################################################################
+"    .
+"   /|\
+"  / |/\
+" | \|'.|
+" \.'|/ /
+"  \'|'/
+"   `|´
+"    |
+" This file was written by Steve 'Grasseh' Gagné and can be reused for free.
+" It contains personal vim configurations
+"###########################################################################
 "Display"
 set background=dark
 set ruler     "Display current selected"

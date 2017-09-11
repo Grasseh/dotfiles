@@ -1,7 +1,16 @@
+############################################################################
+#    .
+#   /|\
+#  / |/\
+# | \|'.|
+# \.'|/ /
+#  \'|'/
+#   `|´
+#    |
+# This file was written by Steve "Grasseh" Gagné and can be reused for free.
+# It contains variable aliases for Ubuntu.
+############################################################################
 fortune
-#This file allows different set constant variables to be used in bash
-#Inspired by Mike Stewart - http://MediaDoneRight.com
-#Color formats obtained from http://misc.flogisoft.com/bash/tip_colors_and_formatting
 # ===========
 # Path + Env Variable
 # ===========
