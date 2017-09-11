@@ -1,5 +1,5 @@
 [user]
-    name = Grasseh 
+    name = Grasseh
     email = steve.gagnev4si@gmail.com
 [color]
     ui = true
@@ -20,7 +20,7 @@
     changed = red bold
     untracked = cyan
 [core]
-    editor = vim 
+    editor = vim
     excludesfile = ~/.gitignore_global
 [merge]
     ff = false
