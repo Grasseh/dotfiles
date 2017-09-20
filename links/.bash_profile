@@ -31,7 +31,7 @@ alias ggc='git gc'
 alias ga='git add'
 alias gaa='git add -A .'
 # commit
-alias gc='git add -A; git commit -a;'
+alias gc='git add -A; git commit'
 alias gcm='git commit -m'
 # merge
 alias gcp='git cherry-pick'
