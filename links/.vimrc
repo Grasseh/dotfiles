@@ -72,4 +72,6 @@ let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_open_list = 1
 let g:ale_list_window_size = 3
 "Ctrl-P"
-let g:ctrlp_custom_ignore = 'node_modules\'
+let g:ctrlp_custom_ignore = 'node_modules\|(.*).swp'
+"Tmux fix"
+set t_ut=

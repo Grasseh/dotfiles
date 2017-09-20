@@ -5,3 +5,4 @@ https://github.com/vim-airline/vim-airline-themes
 https://github.com/sheerun/vim-polyglot
 https://github.com/w0rp/ale
 https://github.com/yegappan/grep
+https://github.com/airblade/vim-gitgutter.git
