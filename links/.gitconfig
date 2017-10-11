@@ -37,4 +37,4 @@
 [merge]
     ff = false
 [push]
-    default = simple
+    default = current
