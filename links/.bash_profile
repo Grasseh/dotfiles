@@ -89,6 +89,8 @@ alias grea="git remote add"
 alias gres="git remote set-url"
 alias greso="git remote set-url origin"
 alias grer="git remote remove"
+#more
+alias gpr="git branch --merged | egrep -v \"(^\*|master|dev)\" | xargs git branch -d; git remote prune origin"
 # ---------------------------------------------------------------------
 # Other aliases
 # ---------------------------------------------------------------------
