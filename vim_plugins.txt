@@ -6,3 +6,4 @@ https://github.com/sheerun/vim-polyglot
 https://github.com/w0rp/ale
 https://github.com/yegappan/grep
 https://github.com/airblade/vim-gitgutter.git
+https://github.com/machakann/vim-sandwich
