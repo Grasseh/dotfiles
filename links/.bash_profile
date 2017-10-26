@@ -33,6 +33,7 @@ alias gaa='git add -A .'
 # commit
 alias gc='git add -A; git commit'
 alias gcm='git commit -m'
+alias gca='git commit --amend'
 # merge
 alias gcp='git cherry-pick'
 alias gm="git merge --no-ff"
