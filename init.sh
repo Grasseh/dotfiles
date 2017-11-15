@@ -49,9 +49,9 @@ if  [[ "$OS" == "ubuntu" ]]; then
     echo "Setting up 9 ubuntu settings"
 fi
 if  [[ "$OS" == "osx" ]]; then
-	defaults write com.apple.finder AppleShowAllFiles YES. #Show Hidden Files
-	defaults write -g com.apple.trackpad.scaling -float 5.0 # > Trackpade speed
-	defaults write -g com.apple.mouse.scaling 3 # > Mouse Speed
+    defaults write com.apple.finder AppleShowAllFiles YES. #Show Hidden Files
+    defaults write -g com.apple.trackpad.scaling -float 5.0 # > Trackpade speed
+    defaults write -g com.apple.mouse.scaling 3 # > Mouse Speed
 fi
 
 #!?!?!?!?!?!?!?!?!?!?!?!
@@ -67,7 +67,7 @@ fi
 
 ## Brew
 if  [[ "$OS" == "osx" ]]; then
-	bash osx/install.sh
+    bash osx/install.sh
     while read v; do
         brew install $v
     done <~/dotfiles/brew.txt
@@ -79,6 +79,13 @@ cd ~/.vim/bundle
 while read v; do
     git clone $v
 done <~/dotfiles/vim_plugins.txt
+
+##NerdFont(ForVim)
+mkdir ~/dotfiles/tmp
+cd ~/dotfiles/tmp
+git clone https://github.com/ryanoasis/nerd-fonts
+bash ~/dotfiles/tmp/nerd-fonts/install.sh FiraMono
+rm -rf ~/dotfiles/tmp
 
 #!?!?!?!?!?!?!?!?!?!?!?!
 # Done

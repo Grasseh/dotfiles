@@ -21,8 +21,9 @@ let g:airline_theme='wombat'
 set hlsearch
 set incsearch
 set showcmd
+set guifont=FiraMono\ Nerd\ Font\ 11
 "Behavior"
-set encoding=utf_8
+set encoding=utf8
 set expandtab
 set smarttab
 set shiftwidth=4
@@ -74,5 +75,7 @@ let g:ale_open_list = 1
 let g:ale_list_window_size = 3
 "Ctrl-P"
 let g:ctrlp_custom_ignore = 'node_modules\|(.*).swp'
+"Airline"
+let g:airline_powerline_fonts = 1
 "Tmux fix"
 set t_ut=
