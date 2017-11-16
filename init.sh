@@ -81,6 +81,7 @@ while read v; do
 done <~/dotfiles/vim_plugins.txt
 
 ##NerdFont(ForVim)
+# TODO : Check if font was already installed
 mkdir ~/dotfiles/tmp
 cd ~/dotfiles/tmp
 git clone https://github.com/ryanoasis/nerd-fonts
