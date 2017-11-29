@@ -73,6 +73,7 @@ let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_open_list = 1
 let g:ale_list_window_size = 3
+let g:ale_python_pylint_executable ="pylint3"
 "Ctrl-P"
 let g:ctrlp_custom_ignore = 'node_modules\|(.*).swp'
 "Airline"
