@@ -99,6 +99,7 @@ alias ..='cd ..'
 alias ...='cd ..; cd ..;'
 alias ....='cd ..; cd ..;cd ..;'
 alias ~="cd ~"
+alias aliases='vim ~/dotfiles/links/.bash_profile'
 alias brails='bin/rails'
 alias c='clear'
 alias ca='composer dumpautoload'
@@ -115,6 +116,7 @@ alias reload='c; . ~/.bash_profile'
 alias rmr='sudo rm -R'
 alias sourcebash='source ~/.bash_profile'
 alias todo='vim ~/todo.MD'
+alias v='vim'
 # ---------------------------------------------------------------------
 # Directory aliases
 # ---------------------------------------------------------------------
