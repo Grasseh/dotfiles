@@ -9,3 +9,4 @@ https://github.com/airblade/vim-gitgutter.git
 https://github.com/machakann/vim-sandwich
 https://github.com/ryanoasis/vim-devicons
 https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
+https://github.com/ryanoasis/nerd-fonts

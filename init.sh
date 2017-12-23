@@ -60,6 +60,7 @@ fi
 
 ## Apt
 if  [[ "$OS" == "ubuntu" ]]; then
+    sudo apt autoremove -y
     while read v; do
         sudo apt install -y $v
     done <~/dotfiles/apt.txt
@@ -74,19 +75,25 @@ if  [[ "$OS" == "osx" ]]; then
 fi
 
 ## Vim
-mkdir ~/.vim/bundle
+directory="~/.vim/bundle"
+if [ ! -d $directory ]; then
+    mkdir ~/.vim/bundle
+fi
 cd ~/.vim/bundle
+regex="^https:\/\/github.com\/.+\/(.+)$"
 while read v; do
-    git clone $v
+    if [[ $v =~ $regex ]]; then
+        folder=BASH_REMATCH[1]
+        directory="~/.vim/bundle/$folder"
+        if [ ! -d $directory ]; then
+            git clone $v
+        fi
+    fi
 done <~/dotfiles/vim_plugins.txt
 
 ##NerdFont(ForVim)
 # TODO : Check if font was already installed
-mkdir ~/dotfiles/tmp
-cd ~/dotfiles/tmp
-git clone https://github.com/ryanoasis/nerd-fonts
-bash ~/dotfiles/tmp/nerd-fonts/install.sh FiraMono
-rm -rf ~/dotfiles/tmp
+bash ~/.vim/bundle/nerd-fonts/install.sh FiraMono
 
 #!?!?!?!?!?!?!?!?!?!?!?!
 # Done
