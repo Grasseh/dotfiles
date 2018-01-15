@@ -69,7 +69,7 @@ parse_git_branch() {
 make_site(){
     sudo mkdir ~/tmp
     #Generate Apache Config File
-    sudo cp ~/dotfiles/apache/base.loc.conf ~/tmp/$1.loc.conf
+    sudo cp ~/dotfiles/links/apache/base.loc.conf ~/tmp/$1.loc.conf
     sudo perl -pi -e 's/#Website#/'$1'/g' ~/tmp/$1.loc.conf
     sudo mv ~/tmp/$1.loc.conf /etc/apache2/sites-available/$1.loc.conf
     #Create Apache Directory
