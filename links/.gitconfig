@@ -12,7 +12,8 @@
 ############################################################################
 [user]
     name = Grasseh
-    email = steve.gagnev4si@gmail.com
+    email = steve@grasseh.com
+    signingkey = 4722A605132D68C0
 [color]
     ui = true
     branch = auto
@@ -38,3 +39,5 @@
     ff = false
 [push]
     default = current
+[commit]
+    gpgsign = true
