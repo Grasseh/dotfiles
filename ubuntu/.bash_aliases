@@ -26,6 +26,7 @@ export PATH=$PATH:/usr/sbin
 export PATH=$PATH:/sbin
 export PATH=$PATH:/usr/local/sbin
 export PATH=$PATH:/home/grasseh/bin/Jess71p2/Jess71p2/bin
+export PATH=$PATH:/home/grasseh/bin/use-5.0.0/bin
 export GOPATH=$HOME/projects/go
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
