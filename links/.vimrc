@@ -60,12 +60,13 @@ map <C-p> :CtrlP<CR>
 "Leader commands"
 vmap <leader>y :w! /tmp/vitmp<CR>
 nmap <leader>w :wviminfo! /tmp/viminfo<CR>
-nmap <leader>p :r! cat /tmp/vitmp<CR>
+nmap <leader>pa :r! cat /tmp/vitmp<CR>
 nmap <leader>r :rviminfo! /tmp/viminfo<CR>
 nmap <leader>sp :set paste<CR>
 nmap <leader>snp :set nopaste<CR>
 nmap <leader>ws :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 nmap <leader><TAB> :retab<CR>
+nmap <leader>py :QuickRun python3<Return>
 "Pathogen"
 execute pathogen#infect()
 "Ale"
