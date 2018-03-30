@@ -105,4 +105,4 @@ delete_site(){
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
 alias ets='cd ~/ets'
 alias open='xdg-open'
-alias sfr='sudo apt update -y;sudo apt upgrade -y'
+alias sfr='sudo apt update -y;sudo apt upgrade -y;sudo apt autoremove -y'
