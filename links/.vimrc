@@ -24,12 +24,10 @@ set showcmd
 set guifont=FiraMono\ Nerd\ Font\ 11
 "Behavior"
 set encoding=utf8
-set expandtab
-set smarttab
+filetype plugin indent on
 set shiftwidth=4
 set tabstop=4
-set ai "Auto-indent"
-set si "Smart-indent"
+set expandtab
 set splitbelow
 set splitright
 let NERDTreeShowHidden = 1
@@ -38,7 +36,6 @@ set splitbelow
 set splitright
 set backspace=indent,eol,start
 syntax on
-filetype plugin indent on
 "Relative Numbers"
 set relativenumber
 let NERDTreeShowLineNumbers=1 "Display relatives in nerdtree too"
