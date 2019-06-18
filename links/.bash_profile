@@ -91,7 +91,7 @@ alias gres="git remote set-url"
 alias greso="git remote set-url origin"
 alias grer="git remote remove"
 #more
-alias gpr="git branch --merged | egrep -v \"(^\*|master|dev)\" | xargs git branch -d; git remote prune origin"
+alias gpr="git branch --merged | egrep -v \"(^\*|master|dev)\" | xargs git branch -d; git remote prune origin" #Prune branches that are merged, as well as their remotes
 # ---------------------------------------------------------------------
 # Other aliases
 # ---------------------------------------------------------------------
