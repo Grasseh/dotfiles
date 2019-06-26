@@ -112,6 +112,8 @@ alias la='ls -alsh'
 alias notes='vim ~/notes.MD'
 alias path='echo -e ${PATH//:/\\n}'
 alias pu='phpunit'
+alias rdw='rails dev:watch'
+alias rdd='CLIENT=devcli rails dev:watch'
 alias reload='c; . ~/.bash_profile'
 alias rmr='sudo rm -R'
 alias sourcebash='source ~/.bash_profile'
@@ -125,6 +127,7 @@ alias dotfiles='cd ~/dotfiles'
 alias grasseh='cd ~/projects/grasseh.com'
 alias home='cd ~'
 alias projects='cd ~/projects/'
+alias metrio='cd ~/projects/metrio'
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
 #-=-=-=-=-=-=-=-=-COLORS=-=-=-=-=-=-=-=-=-#
@@ -174,3 +177,9 @@ export NVM_DIR="$HOME/.nvm"
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
 export PATH
+#RbEnv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+#NodeEnv
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"

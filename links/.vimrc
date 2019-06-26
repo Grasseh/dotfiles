@@ -25,8 +25,8 @@ set guifont=FiraMono\ Nerd\ Font\ 11
 "Behavior"
 set encoding=utf8
 filetype plugin indent on
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set expandtab
 set splitbelow
 set splitright
