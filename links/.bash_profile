@@ -106,6 +106,7 @@ alias ca='composer dumpautoload'
 alias ci='composer install'
 alias cr='composer require'
 alias cu='composer update'
+alias deploy="ssh-add && ssh -A root@devops.metrio.net"
 alias ft='printf "\e[?2004l"' #Fix terminal pasting
 alias gitgud='echo "[ ] not rekt  [x] rekt"'
 alias la='ls -alsh'
