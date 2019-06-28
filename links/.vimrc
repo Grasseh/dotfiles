@@ -53,6 +53,7 @@ map <C-p> :CtrlP<CR>
 :command Q q
 :command Wq wq
 :command Wqa wqa
+:command Qa qa
 :let mapleader = " "
 "Leader commands"
 vmap <leader>y :w! /tmp/vitmp<CR>
