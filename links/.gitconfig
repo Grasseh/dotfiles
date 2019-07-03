@@ -11,7 +11,7 @@
 # It contains personal git configurations
 ############################################################################
 [user]
-    name = Grasseh
+    name = Steve Gagné
     email = steve@grasseh.com
 [color]
     ui = true
