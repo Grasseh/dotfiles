@@ -1,0 +1,13 @@
+{
+  "colors": {
+		"zenburn:normal": [234, "1F1F1F"],
+		"zenburn:normalFG": [188, "DCDCCC"],
+    "zenburn:yellow1": [228, "f8f893"],
+    "zenburn:statuslineBG": [186, "ccdc90"],
+    "zenburn:statuslineFG": [236, "313633"],
+    "zenburn:boolean": [181, "DCA3A3"],
+    "zenburn:function": [228, "EFEF8F"],
+    "zenburn:identifier": [223, "EFDCBC"],
+    "zenburn:fg": [23, "385f38"]
+	}
+}

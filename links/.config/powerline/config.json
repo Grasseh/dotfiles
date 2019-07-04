@@ -1,0 +1,9 @@
+{
+	"ext": {
+		"tmux": {
+			"colorscheme": "zenburn",
+			"theme": "default"
+		}
+	},
+  "log_file" : "/tmp/logs/pline.log"
+}
