@@ -109,6 +109,7 @@ alias cu='composer update'
 alias deploy="ssh-add && ssh -A root@devops.metrio.net"
 alias ft='printf "\e[?2004l"' #Fix terminal pasting
 alias gitgud='echo "[ ] not rekt  [x] rekt"'
+alias karb='killall ruby'
 alias la='ls -alsh'
 alias notes='vim ~/notes.MD'
 alias path='echo -e ${PATH//:/\\n}'

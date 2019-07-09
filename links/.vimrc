@@ -81,3 +81,5 @@ let g:ctrlp_custom_ignore = 'node_modules\|(.*).swp'
 let g:airline_powerline_fonts = 1
 "Tmux fix"
 set t_ut=
+"SilverSearcher-ag"
+let g:ackprg = 'ag --nogroup --nocolor --column'
