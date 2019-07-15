@@ -22,7 +22,7 @@ set hlsearch
 set incsearch
 set showcmd
 set guifont=FiraMono\ Nerd\ Font\ 11
-set list listchars=tab:»\ ,trail:·,nbsp:֎
+set list listchars=tab:»\ ,trail:█,nbsp:֎
 "Behavior"
 set encoding=utf8
 filetype plugin indent on
