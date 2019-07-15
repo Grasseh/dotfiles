@@ -12,3 +12,5 @@ https://github.com/tiagofumo/vim-nerdtree-syntax-highlight
 https://github.com/ryanoasis/nerd-fonts
 https://github.com/thinca/vim-quickrun
 https://github.com/tpope/vim-commentary
+https://github.com/mileszs/ack.vim.git
+https://github.com/tpope/vim-rails.git
