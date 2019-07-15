@@ -22,6 +22,7 @@ set hlsearch
 set incsearch
 set showcmd
 set guifont=FiraMono\ Nerd\ Font\ 11
+set list listchars=tab:»\ ,trail:·,nbsp:֎
 "Behavior"
 set encoding=utf8
 filetype plugin indent on
@@ -35,6 +36,7 @@ set laststatus=2
 set splitbelow
 set splitright
 set backspace=indent,eol,start
+set switchbuf+=usetab,newtab
 syntax on
 "Relative Numbers"
 set relativenumber
@@ -82,4 +84,6 @@ let g:airline_powerline_fonts = 1
 "Tmux fix"
 set t_ut=
 "SilverSearcher-ag"
-let g:ackprg = 'ag --nogroup --nocolor --column'
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
