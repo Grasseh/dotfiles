@@ -130,6 +130,10 @@ alias grasseh='cd ~/projects/grasseh.com'
 alias home='cd ~'
 alias projects='cd ~/projects/'
 alias metrio='cd ~/projects/metrio'
+alias metrio2='cd ~/projects/metrio2'
+alias metrio3='cd ~/projects/metrio3'
+alias metrio4='cd ~/projects/metrio4'
+alias metrio5='cd ~/projects/metrio5'
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
 #-=-=-=-=-=-=-=-=-COLORS=-=-=-=-=-=-=-=-=-#
