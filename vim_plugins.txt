@@ -14,3 +14,5 @@ https://github.com/thinca/vim-quickrun
 https://github.com/tpope/vim-commentary
 https://github.com/mileszs/ack.vim.git
 https://github.com/tpope/vim-rails.git
+https://github.com/benmills/vimux
+https://github.com/pgr0ss/vimux-ruby-test

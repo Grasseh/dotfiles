@@ -62,12 +62,13 @@ map <C-p> :CtrlP<CR>
 vmap <leader>y :w! /tmp/vitmp<CR>
 nmap <leader>w :wviminfo! /tmp/viminfo<CR>
 nmap <leader>pa :r! cat /tmp/vitmp<CR>
-nmap <leader>r :rviminfo! /tmp/viminfo<CR>
+nmap <leader>re :rviminfo! /tmp/viminfo<CR>
 nmap <leader>sp :set paste<CR>
 nmap <leader>snp :set nopaste<CR>
 nmap <leader>ws :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
 nmap <leader><TAB> :retab<CR>
 nmap <leader>py :QuickRun python3<Return>
+nmap <leader>rt :RunRailsFocusedTest<CR>
 "Pathogen"
 execute pathogen#infect()
 "Ale"
