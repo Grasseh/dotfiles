@@ -134,6 +134,7 @@ alias m2='cd ~/projects/metrio2'
 alias m3='cd ~/projects/metrio3'
 alias m4='cd ~/projects/metrio4'
 alias m5='cd ~/projects/metrio5'
+alias lm='~/metrio.sh'
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
 #-=-=-=-=-=-=-=-=-COLORS=-=-=-=-=-=-=-=-=-#
