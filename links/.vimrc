@@ -23,6 +23,7 @@ set incsearch
 set showcmd
 set guifont=FiraMono\ Nerd\ Font\ 11
 set list listchars=tab:»\ ,trail:█,nbsp:֎
+
 "Behavior"
 set encoding=utf8
 filetype plugin indent on
@@ -38,11 +39,13 @@ set splitright
 set backspace=indent,eol,start
 set switchbuf+=usetab,newtab
 syntax on
+
 "Relative Numbers"
 set relativenumber
 let NERDTreeShowLineNumbers=1 "Display relatives in nerdtree too"
 autocmd FileType nerdtree setlocal relativenumber "nerdtree still"
 autocmd BufEnter * set rnu
+
 "Remaps"
 xnoremap p pgvy
 map <C-n> :NERDTreeToggle<CR>
@@ -57,16 +60,26 @@ map <C-p> :Files<CR>
 :command Wqa wqa
 :command Qa qa
 :let mapleader = " "
+
 "Leader commands"
+"Yank to tmp"
 vmap <leader>y :w! /tmp/vitmp<CR>
 nmap <leader>w :wviminfo! /tmp/viminfo<CR>
+"Read from tmp"
 nmap <leader>pa :r! cat /tmp/vitmp<CR>
-nmap <leader>r :rviminfo! /tmp/viminfo<CR>
+nmap <leader>re :rviminfo! /tmp/viminfo<CR>
+"Set paste mode for indents"
 nmap <leader>sp :set paste<CR>
 nmap <leader>snp :set nopaste<CR>
+"Clean whitespaces"
 nmap <leader>ws :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
+"Clean tabs"
 nmap <leader><TAB> :retab<CR>
+"Run python"
 nmap <leader>py :QuickRun python3<Return>
+"search recursively"
+nmap <leader>ag :Ag<CR>
+
 "Pathogen"
 execute pathogen#infect()
 "Ale"
@@ -77,10 +90,6 @@ let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_open_list = 1
 let g:ale_list_window_size = 3
 let g:ale_python_pylint_executable ="pylint3"
-"Ctrl-P"
-let g:ctrlp_custom_ignore = 'node_modules\|(.*).swp'
-let g:ctrlp_max_files = 30000
-let g:ctrlp_max_depth = 8
 "Airline"
 let g:airline_powerline_fonts = 1
 "Tmux fix"
