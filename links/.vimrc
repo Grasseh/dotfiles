@@ -81,8 +81,8 @@ let g:ale_list_window_size = 3
 let g:ale_python_pylint_executable ="pylint3"
 "Ctrl-P"
 let g:ctrlp_custom_ignore = 'node_modules\|(.*).swp'
-let g:ctrlp_max_files = 30000
-let g:ctrlp_max_depth = 8
+let g:ctrlp_max_files = 100000
+let g:ctrlp_max_depth = 40
 "Airline"
 let g:airline_powerline_fonts = 1
 "Tmux fix"
