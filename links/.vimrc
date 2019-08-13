@@ -50,7 +50,7 @@ nnoremap <UP> <C-W><C-K> " Map arrow keys to move around splits
 nnoremap <DOWN> <C-W><C-J>
 nnoremap <RIGHT> <C-W><C-L>
 nnoremap <LEFT> <C-W><C-H>
-map <C-p> :CtrlP<CR>
+map <C-p> :Files<CR>
 :command W w
 :command Q q
 :command Wq wq
@@ -85,7 +85,3 @@ let g:ctrlp_max_depth = 8
 let g:airline_powerline_fonts = 1
 "Tmux fix"
 set t_ut=
-"SilverSearcher-ag"
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
-endif
