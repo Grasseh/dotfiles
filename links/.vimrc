@@ -64,7 +64,7 @@ map <C-p> :Files<CR>
 
 "Leader commands"
 "Yank to tmp"
-vmap <leader>y :w! /tmp/vitmp<CR> 
+vmap <leader>y :w! /tmp/vitmp<CR>
 nmap <leader>w :wviminfo! /tmp/viminfo<CR>
 "Read from tmp"
 nmap <leader>pa :r! cat /tmp/vitmp<CR>
@@ -95,5 +95,8 @@ let g:ale_set_quickfix = 0
 let g:ale_python_pylint_executable ="pylint3"
 "Airline"
 let g:airline_powerline_fonts = 1
+"Vimux"
+let g:VimuxHeight = "35"
+let g:VimuxOrientation = "h"
 "Tmux fix"
 set t_ut=
