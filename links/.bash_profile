@@ -120,6 +120,7 @@ alias reload='c; . ~/.bash_profile'
 alias rmr='sudo rm -R'
 alias rms='find . -name "*.swp" -exec rm -i "{}" \;'
 alias sourcebash='source ~/.bash_profile'
+alias ssa="ssh-add ~/.ssh/id_rsa"
 alias todo='vim ~/todo.MD'
 alias v='vim'
 # ---------------------------------------------------------------------
