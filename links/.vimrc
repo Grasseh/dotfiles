@@ -54,7 +54,7 @@ nnoremap <UP> <C-W><C-K> " Map arrow keys to move around splits
 nnoremap <DOWN> <C-W><C-J>
 nnoremap <RIGHT> <C-W><C-L>
 nnoremap <LEFT> <C-W><C-H>
-map <C-p> :Files<CR>
+map <C-p> :GFiles<CR>
 :command W w
 :command Q q
 :command Wq wq
@@ -82,6 +82,8 @@ nmap <leader>py :QuickRun python3<Return>
 nmap <leader>rt :RunRailsFocusedTest<CR>
 "search recursively"
 nmap <leader>ag :Ag<CR>
+"Check files in git status"
+nmap <leader>gf :GFiles?<CR>
 
 "Pathogen"
 execute pathogen#infect()
