@@ -63,11 +63,15 @@ map <C-p> :Files<CR>
 
 "Leader commands"
 "Yank to tmp"
-vmap <leader>y :w! /tmp/vitmp<CR>
-nmap <leader>w :wviminfo! /tmp/viminfo<CR>
+vmap <leader>tmpy :w! /tmp/vitmp<CR>
+nmap <leader>tmpw :wviminfo! /tmp/viminfo<CR>
 "Read from tmp"
-nmap <leader>pa :r! cat /tmp/vitmp<CR>
-nmap <leader>re :rviminfo! /tmp/viminfo<CR>
+nmap <leader>tmpp :r! cat /tmp/vitmp<CR>
+nmap <leader>tmpr :rviminfo! /tmp/viminfo<CR>
+"Copy-paste to and from register"
+nmap <leader>yy "+yy
+nmap <leader>dd "+dd
+nmap <leader>pa "+p
 "Set paste mode for indents"
 nmap <leader>sp :set paste<CR>
 nmap <leader>snp :set nopaste<CR>
