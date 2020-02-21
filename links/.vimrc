@@ -65,6 +65,7 @@ map <C-p> :GFiles<CR>
 "Leader commands"
 "Yank to tmp"
 vmap <leader>tmpy :w! /tmp/vitmp<CR>
+nmap <leader>tmpy :w! /tmp/vitmp<CR>
 nmap <leader>tmpw :wviminfo! /tmp/viminfo<CR>
 "Read from tmp"
 nmap <leader>tmpp :r! cat /tmp/vitmp<CR>

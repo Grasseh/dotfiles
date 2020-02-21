@@ -40,6 +40,7 @@ alias gm="git merge --no-ff"
 # log
 alias gl='git log --graph --abbrev-commit --decorate --date=relative --format=format:'"'"'%C(bold cyan)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(magenta)- %an%C(reset)%C(bold yellow)%d%C(reset)'"'"' --all'
 alias gl2='git log --graph --abbrev-commit --decorate --format=format:'"'"'%C(bold cyan)%h%C(reset) - %C(bold green)%aD%C(reset) %C(dim green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n          %C(white)%s%C(reset) %C(magenta)- %an%C(reset)'"'"' --all'
+alias glw='gl --since "1 week ago" --author "Steve Gagné"'
 alias grl='git reflog;'
 # submodule
 alias gsi='git submodule init; git submodule update'
@@ -59,6 +60,7 @@ alias gplm='git push live master'
 # branch
 alias gch="git checkout"
 alias gchb="git checkout -b"
+alias gchp="git checkout production"
 alias gb="git branch"
 alias gba='git branch -a'
 alias gbd='git branch -d'
@@ -100,6 +102,7 @@ alias ...='cd ..; cd ..;'
 alias ....='cd ..; cd ..;cd ..;'
 alias ~="cd ~"
 alias aliases='vim ~/dotfiles/links/.bash_profile'
+alias bigfiles="sudo find / -xdev -type f -size +200M -exec du -bh {} \;"
 alias brails='bin/rails'
 alias bril='xrandr --output eDP-1 --brightness'
 alias brih='xrandr --output HDMI-1 --brightness'
@@ -117,7 +120,9 @@ alias notes='vim ~/notes.MD'
 alias path='echo -e ${PATH//:/\\n}'
 alias pu='phpunit'
 alias rdw='rails dev:watch'
+alias rdwf='rails dev:watch_full'
 alias rdd='CLIENT=devcli rails dev:watch'
+alias rddf='CLIENT=devcli rails dev:watch_full'
 alias rdprod='DEBUG_PRODUCTION=true RAILS_ENV=production rails s'
 alias reload='c; . ~/.bash_profile'
 alias rmr='sudo rm -R'
