@@ -71,6 +71,7 @@ nmap <leader>tmpw :wviminfo! /tmp/viminfo<CR>
 nmap <leader>tmpp :r! cat /tmp/vitmp<CR>
 nmap <leader>tmpr :rviminfo! /tmp/viminfo<CR>
 "Copy-paste to and from register"
+vmap <leader>yy "+yy
 nmap <leader>yy "+yy
 nmap <leader>dd "+dd
 nmap <leader>pa "+p
