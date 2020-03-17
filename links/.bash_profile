@@ -112,6 +112,8 @@ alias ci='composer install'
 alias cr='composer require'
 alias cu='composer update'
 alias deploy="ssh-add && ssh -A root@devops.metrio.net"
+alias dc="docker-compose"
+alias dcu="docker-compose up"
 alias ft='printf "\e[?2004l"' #Fix terminal pasting
 alias gitgud='echo "[ ] not rekt  [x] rekt"'
 alias karb='killall -s SIGKILL ruby'
@@ -144,6 +146,7 @@ alias m2='cd ~/projects/metrio2'
 alias m3='cd ~/projects/metrio3'
 alias m4='cd ~/projects/metrio4'
 alias m5='cd ~/projects/metrio5'
+alias v4='cd ~/projects/metriov4'
 alias lm='~/metrio.sh'
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
