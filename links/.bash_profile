@@ -206,6 +206,3 @@ eval "$(rbenv init -)"
 #NodeEnv
 export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
-
-#FUCK
-eval $(thefuck --alias)
