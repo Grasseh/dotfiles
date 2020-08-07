@@ -120,6 +120,7 @@ alias ft='printf "\e[?2004l"' #Fix terminal pasting
 alias gitgud='echo "[ ] not rekt  [x] rekt"'
 alias karb='killall -s SIGKILL ruby && pkill -9 -f gulp'
 alias la='ls -alsh'
+alias mdbr='sudo service mongodb restart'
 alias notes='vim ~/notes.MD'
 alias path='echo -e ${PATH//:/\\n}'
 alias pu='phpunit'
