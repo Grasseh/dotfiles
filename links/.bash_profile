@@ -109,6 +109,7 @@ alias cu='composer update'
 alias ft='printf "\e[?2004l"' #Fix terminal pasting
 alias gitgud='echo "[ ] not rekt  [x] rekt"'
 alias la='ls -alsh'
+alias mdbr='sudo service mongodb restart'
 alias notes='vim ~/notes.MD'
 alias path='echo -e ${PATH//:/\\n}'
 alias pu='phpunit'
