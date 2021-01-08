@@ -25,5 +25,6 @@ if [ "$?" == 2 ]; then
 fi
 if  [[ $(uname -a | grep "Linux") ]]; then
     . ~/.git-prompt.sh
+    . ~/.gh_cli.sh
     . ~/.bash_profile
 fi
