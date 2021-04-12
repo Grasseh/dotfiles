@@ -13,6 +13,7 @@
 [user]
     name = Steve Gagné
     email = steve@grasseh.com
+	signingkey = 7039D6F46ED4D9C8
 [color]
     ui = true
     branch = auto
