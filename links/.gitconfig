@@ -39,3 +39,5 @@
     ff = false
 [push]
     default = current
+[commit]
+	gpgsign = true
