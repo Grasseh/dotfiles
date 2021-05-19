@@ -117,6 +117,7 @@ alias deploy="ssh-add && ssh -A root@devops.metrio.net"
 alias dc="docker-compose"
 alias dcu="docker-compose up"
 alias ft='printf "\e[?2004l"' #Fix terminal pasting
+alias fiap='frontend_is_always_problems'
 alias gitgud='echo "[ ] not rekt  [x] rekt"'
 alias karb='killall -s SIGKILL ruby && pkill -9 -f gulp; killall node'
 alias la='ls -alsh'
@@ -149,7 +150,11 @@ alias m2='cd ~/projects/metrio2/backend'
 alias m3='cd ~/projects/metrio3/backend'
 alias m4='cd ~/projects/metrio4/backend'
 alias m5='cd ~/projects/metrio5/backend'
-alias v4='cd ~/projects/metriov4'
+alias m1d='cd ~/projects/metrio/devops'
+alias m2d='cd ~/projects/metrio2/devops'
+alias m3d='cd ~/projects/metrio3/devops'
+alias m4d='cd ~/projects/metrio4/devops'
+alias m5d='cd ~/projects/metrio5/devops'
 alias lm='~/metrio.sh'
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
@@ -176,6 +181,30 @@ prompt_cmd () {
 PROMPT_COMMAND='prompt_cmd'
 export CLICOLOR=1
 export LSCOLORS=fxFxBxDxCxegedabagacad
+
+# ---------------------------------------------------------------------
+# WTF even is frontend?
+# ---------------------------------------------------------------------
+frontend_is_always_problems() {
+  echo "Solving classic frontend problems"
+  cd ..
+  cd frontend/metrio3
+  rm -rf dist tmp node_modules
+  yarn cache clean
+  yarn install
+  cd ../..
+  cd frontend/metrio4
+  rm -rf dist node_modules
+  yarn cache clean
+  yarn install
+  cd ../..
+  cd frontend/server
+  rm -rf dist node_modules
+  yarn cache clean
+  yarn install
+  cd ../..
+  echo "Yo. Next time just rm -rf the frontend folder"
+}
 
 # ---------------------------------------------------------------------
 # Default Editor
