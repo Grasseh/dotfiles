@@ -11,13 +11,16 @@
 # It contains aliases, functions and variables meant to be used on a nu shell
 ############################################################################
 startup = [
+  "source ~/.config/nu/git_functions.nu",
+#---------------------------------------------------------------------
+# Aliases
+# ---------------------------------------------------------------------
   "alias la = ls --long",
 #---------------------------------------------------------------------
 # Git aliases
 # ---------------------------------------------------------------------
 # general
   "alias gs = git status",
-  "alias gfr = 'git fetch ; git rebase;'",
   "alias gf = git fetch",
   "alias gr = git rebase",
   "alias gra = git rebase --abort",
@@ -28,7 +31,6 @@ startup = [
   "alias ga = git add",
   "alias gaa = git add -A .",
 # commit
-  "alias gc = 'git add -A; git commit'",
   "alias gcm = git commit -m",
   "alias gca = git commit --amend",
 # merge
@@ -38,10 +40,10 @@ startup = [
   "alias gl = git log --graph --abbrev-commit --decorate --date=relative --format=format:'\"'\"'%C(bold cyan)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(magenta)- %an%C(reset)%C(bold yellow)%d%C(reset)'\"'\"' --all",
   "alias gl2 = git log --graph --abbrev-commit --decorate --format=format:'\"'\"'%C(bold cyan)%h%C(reset) - %C(bold green)%aD%C(reset) %C(dim green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n          %C(white)%s%C(reset) %C(magenta)- %an%C(reset)'\"'\"' --all",
   "alias glw = gl --since \"1 week ago\" --author \"Steve Gagné\"",
-  "alias grl = git reflog;",
+  "alias grl = git reflog",
 # push
   "alias gp = git push",
-  "alias gpom = git push origin master;",
+  "alias gpom = git push origin master",
   "alias gpu = git push -u",
   "alias gpf = git push -f",
   "alias gpuo = git push -u origin",
@@ -81,8 +83,7 @@ startup = [
   "alias gres = git remote set-url",
   "alias greso = git remote set-url origin",
   "alias grer = git remote remove",
-#more
-  "alias gpr = 'git branch --merged | egrep -v \"(^*|master|dev)\" | xargs git branch -d; git remote prune origin'" #Prune branches that are merged, as well as their remote
 ]
+
 use_italics = true
 tab_width = 2
