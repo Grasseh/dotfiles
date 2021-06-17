@@ -12,6 +12,7 @@
 ############################################################################
 startup = [
   "source ~/.config/nu/git_functions.nu",
+  "source ~/.config/nu/metrio_functions.nu",
 #---------------------------------------------------------------------
 # Aliases
 # ---------------------------------------------------------------------
@@ -83,7 +84,61 @@ startup = [
   "alias gres = git remote set-url",
   "alias greso = git remote set-url origin",
   "alias grer = git remote remove",
+# ---------------------------------------------------------------------
+# Directory aliases
+# ---------------------------------------------------------------------
+  "alias desktop = cd ~/Desktop",
+  "alias dotfiles = cd ~/dotfiles",
+  "alias grasseh = cd ~/projects/grasseh.com",
+  "alias home = cd ~",
+  "alias projects = cd ~/projects/",
+  "alias m1 = cd ~/projects/metrio/backend",
+  "alias m2 = cd ~/projects/metrio2/backend",
+  "alias m3 = cd ~/projects/metrio3/backend",
+  "alias m4 = cd ~/projects/metrio4/backend",
+  "alias m5 = cd ~/projects/metrio5/backend",
+  "alias m1d = cd ~/projects/metrio/devops",
+  "alias m2d = cd ~/projects/metrio2/devops",
+  "alias m3d = cd ~/projects/metrio3/devops",
+  "alias m4d = cd ~/projects/metrio4/devops",
+  "alias m5d = cd ~/projects/metrio5/devops",
+  "alias lm = ~/metrio.sh",
+# ---------------------------------------------------------------------
+# Other aliases
+# ---------------------------------------------------------------------
+  "alias ~ = cd ~",
+  "alias aliases = vim ~/dotfiles/links/.bash_profile",
+  "alias bigfiles = sudo find / -xdev -type f -size +200M -exec du -bh {}",
+  "alias brails = bin/rails",
+  "alias bril = xrandr --output eDP-1 --brightness",
+  "alias brih = xrandr --output HDMI-1 --brightness",
+  "alias c = clear",
+  "alias ccip = circleci config process .circleci/config.yml > process.yml",
+  "alias ccie = circleci local execute -c process.yml --job",
+  "alias deploy = ssh-add && ssh -A root@devops.metrio.net",
+  "alias dc = docker-compose",
+  "alias dcu = docker-compose up",
+  "alias fiap = frontend_is_always_problems",
+  "alias gitgud = echo '[ ] not rekt  [x] rekt'",
+  "alias la = ls -alsh",
+  "alias mdbr = sudo service mongod restart",
+  "alias notes = vim ~/notes.MD",
+  "alias path = echo -e ${PATH//:/\\n}",
+  "alias rdw = bin/rails dev:watch",
+  "alias rdwf = bin/rails dev:watch_full",
+  "alias rdd = CLIENT=devcli bin/rails dev:watch",
+  "alias rddf = CLIENT=devcli bin/rails dev:watch_full",
+  "alias rdprod = DEBUG_PRODUCTION=true RAILS_ENV=production bin/rails s",
+  "alias reload = config load ~/.config/nu/config.toml",
+  "alias rmr = sudo rm -R",
+  "alias rms = find . -name '*.swp' -exec rm -i '{}'",
+  "alias ssa = ssh-add ~/.ssh/id_rsa",
+  "alias todo = vim ~/todo.MD",
+  "alias v = vim"
 ]
 
+# ---------------------------------------------------------------------
+# Other options
+# ---------------------------------------------------------------------
 use_italics = true
 tab_width = 2
