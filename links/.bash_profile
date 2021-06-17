@@ -229,3 +229,5 @@ eval "$(rbenv init -)"
 #NodeEnv
 export PATH="$HOME/.nodenv/bin:$PATH"
 eval "$(nodenv init -)"
+#RustUp
+. "$HOME/.cargo/env"
