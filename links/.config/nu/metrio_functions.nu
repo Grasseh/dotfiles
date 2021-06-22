@@ -4,6 +4,14 @@ def karb [] {
   killall node
 }
 
+def rdd [] {
+  with-env [CLIENT devcli] { bin/rails dev:watch }
+}
+
+def rddf [] {
+  with-env [CLIENT devcli] { bin/rails dev:watch_full }
+}
+
 # ---------------------------------------------------------------------
 # WTF even is frontend?
 # ---------------------------------------------------------------------

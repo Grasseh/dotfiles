@@ -38,8 +38,8 @@ startup = [
   "alias gcp = git cherry-pick",
   "alias gm = git merge --no-ff",
 # log
-  "alias gl = git log --graph --abbrev-commit --decorate --date=relative --format=format:'\"'\"'%C(bold cyan)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(magenta)- %an%C(reset)%C(bold yellow)%d%C(reset)'\"'\"' --all",
-  "alias gl2 = git log --graph --abbrev-commit --decorate --format=format:'\"'\"'%C(bold cyan)%h%C(reset) - %C(bold green)%aD%C(reset) %C(dim green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n          %C(white)%s%C(reset) %C(magenta)- %an%C(reset)'\"'\"' --all",
+  "alias gl = git log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold cyan)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(magenta)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all",
+  "alias gl2 = git log --graph --abbrev-commit --decorate --format=format:'%C(bold cyan)%h%C(reset) - %C(bold green)%aD%C(reset) %C(dim green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n          %C(white)%s%C(reset) %C(magenta)- %an%C(reset)' --all",
   "alias glw = gl --since \"1 week ago\" --author \"Steve Gagné\"",
   "alias grl = git reflog",
 # push
@@ -126,9 +126,6 @@ startup = [
   "alias path = echo -e ${PATH//:/\\n}",
   "alias rdw = bin/rails dev:watch",
   "alias rdwf = bin/rails dev:watch_full",
-  "alias rdd = CLIENT=devcli bin/rails dev:watch",
-  "alias rddf = CLIENT=devcli bin/rails dev:watch_full",
-  "alias rdprod = DEBUG_PRODUCTION=true RAILS_ENV=production bin/rails s",
   "alias reload = config load ~/.config/nu/config.toml",
   "alias rmr = sudo rm -R",
   "alias rms = find . -name '*.swp' -exec rm -i '{}'",

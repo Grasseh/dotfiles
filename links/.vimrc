@@ -87,7 +87,7 @@ nmap <leader>py :QuickRun python3<Return>
 "Run rails tests"
 nmap <leader>rt :RunRailsFocusedTest<CR>
 "search recursively"
-nmap <leader>ag :Ag<CR>
+nmap <leader>ag :Ag --ignore={'*node_modules*','*dist*','*tmp*','*assets*'}<CR>
 "Check files in git status"
 nmap <leader>gf :GFiles?<CR>
 
@@ -106,5 +106,6 @@ let g:airline_powerline_fonts = 1
 "Vimux"
 let g:VimuxHeight = "35"
 let g:VimuxOrientation = "h"
+let g:vimux_ruby_clear_console_on_run = 0
 "Tmux fix"
 set t_ut=
