@@ -1,7 +1,7 @@
 def karb [] {
   killall -s SIGKILL ruby
   pkill -9 -f gulp
-  killall node
+  killall -s SIGKILL node
 }
 
 def rdd [] {
