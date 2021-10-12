@@ -132,7 +132,7 @@ alias rddf='CLIENT=devcli bin/rails dev:watch_full'
 alias rdprod='DEBUG_PRODUCTION=true RAILS_ENV=production bin/rails s'
 alias reload='c; . ~/.bash_profile'
 alias rmr='sudo rm -R'
-alias rms='find . -name "*.swp" -exec rm -i "{}" \;'
+alias rms='yes | find . -name "*.swp" -exec rm -i "{}" \;'
 alias sourcebash='source ~/.bash_profile'
 alias ssa="ssh-add ~/.ssh/id_rsa"
 alias todo='vim ~/todo.MD'
