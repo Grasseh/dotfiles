@@ -27,6 +27,7 @@ alias gra='git rebase --abort'
 alias grc='git rebase --continue'
 alias grh='git reset --hard'
 alias ggc='git gc'
+alias grs='git restore --staged'
 # add
 alias ga='git add'
 alias gaa='git add -A .'
@@ -116,13 +117,17 @@ alias cu='composer update'
 alias deploy="ssh-add && ssh -A root@devops.metrio.net"
 alias dc="docker-compose"
 alias dcu="docker-compose up"
+alias dropdb="mongo metrio_development --eval \"db.dropDatabase()\"; mongo metrio_prod_copy --eval \"db.dropDatabase()\""
 alias ft='printf "\e[?2004l"' #Fix terminal pasting
 alias fiap='frontend_is_always_problems'
 alias gitgud='echo "[ ] not rekt  [x] rekt"'
-alias karb='killall -s SIGKILL ruby && pkill -9 -f gulp; killall node'
+alias karb='killall -s SIGKILL ruby && pkill -9 -f gulp; killall node; killall webpack'
 alias la='ls -alsh'
 alias mdbr='sudo service mongod restart'
 alias notes='vim ~/notes.MD'
+alias omcb='overmind connect backend'
+alias omd='CLIENT=devcli overmind s'
+alias oms='overmind s'
 alias path='echo -e ${PATH//:/\\n}'
 alias pu='phpunit'
 alias rdw='bin/rails dev:watch'
@@ -131,6 +136,7 @@ alias rdd='CLIENT=devcli bin/rails dev:watch'
 alias rddf='CLIENT=devcli bin/rails dev:watch_full'
 alias rdprod='DEBUG_PRODUCTION=true RAILS_ENV=production bin/rails s'
 alias reload='c; . ~/.bash_profile'
+alias rebuild='thor clients:tasks:config:rebuild'
 alias rmr='sudo rm -R'
 alias rms='yes | find . -name "*.swp" -exec rm -i "{}" \;'
 alias sourcebash='source ~/.bash_profile'
@@ -140,8 +146,10 @@ alias v='vim'
 # ---------------------------------------------------------------------
 # Directory aliases
 # ---------------------------------------------------------------------
+alias clients='cd ~/projects/clients'
 alias desktop='cd ~/Desktop'
 alias dotfiles='cd ~/dotfiles'
+alias fougere='cd ~/projects/fougere'
 alias grasseh='cd ~/projects/grasseh.com'
 alias home='cd ~'
 alias projects='cd ~/projects/'
@@ -206,6 +214,54 @@ frontend_is_always_problems() {
   echo "Yo. Next time just rm -rf the frontend folder"
 }
 
+# QA
+
+mqa() {
+  firefox https://kruger.metrio.net/super_login
+  firefox https://bonduelle.metrio.net/super_login
+  firefox https://up.metrio.net/super_login
+  firefox https://celanese.metrio.net/super_login
+  firefox https://decathlon.metrio.net/super_login
+  firefox https://svb.metrio.net/super_login
+  firefox https://cn.metrio.net/super_login
+  firefox https://amq.metrio.net/super_login
+  firefox https://brp.metrio.net/super_login
+  firefox https://bmo.metrio.net/super_login
+
+  echo "QA:
+Clients login, CSS compilation on all servers and custom home pages (connect and check home page):
+ - Canada: kruger.metrio.net/super_login :white_check_mark:
+ - France: bonduelle.metrio.net/super_login :white_check_mark:
+ - UP: up.metrio.net/super_login :white_check_mark:
+ - Celanese: celanese.metrio.net/super_login :white_check_mark:
+ - Decathlon: decathlon.metrio.net/super_login :white_check_mark:
+ - SVB: svb.metrio.net/super_login :white_check_mark:
+ - CN: cn.metrio.net/super_login :white_check_mark:
+ - AMQ: amq.metrio.net/super_login :white_check_mark:
+ - BRP: brp.metrio.net/super_login :white_check_mark:
+ - BMO: bmo.metrio.net/super_login :white_check_mark:"
+}
+
+mqa2() {
+  firefox https://up.metrio.net/indicators/p2_personne
+  firefox https://kruger.metrio.net/indicators/overview_by_business_unit/overview_ppd/overview_multi_wayagamack
+  firefox https://www.delivering-responsibly.cn.ca/indicators/people/data_supplement/people_data_supplement
+  firefox https://bonduelle.metrio.net/indicators/resources_humaines
+  firefox https://decathlon.metrio.net/admin/subjects
+  firefox https://amq.metrio.net/admin/subjects/cohabitation_sub
+  firefox https://brp.metrio.net/admin/subjects/en3_energy_consumption_within_the_organization_in_gj_sub
+  firefox https://bmo.metrio.net/admin/subjects/diversity_and_inclusion_2
+
+  echo "Custom indicator: up.metrio.net/indicators/p2_personne :white_check_mark:
+- Multi indicator: kruger.metrio.net/indicators/overview_by_business_unit/overview_ppd/overview_multi_wayagamack :white_check_mark:
+- Table indicator: www.delivering-responsibly.cn.ca/indicators/people/data_supplement/people_data_supplement :white_check_mark:
+- Graph indicator: bonduelle.metrio.net/indicators/resources_humaines :white_check_mark:
+- Data entry index: decathlon.metrio.net/admin/subjects :white_check_mark:
+- Data entry for post value: amq.metrio.net/admin/subjects/cohabitation_sub :white_check_mark:
+- Data entry for multi and single entries: brp.metrio.net/admin/subjects/en3_energy_consumption_within_the_organization_in_gj_sub :white_check_mark:
+- Data entry with single_layout: bmo.metrio.net/admin/subjects/diversity_and_inclusion_2 :white_check_mark:"
+}
+
 # ---------------------------------------------------------------------
 # Default Editor
 # ---------------------------------------------------------------------
@@ -228,6 +284,18 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 #NodeEnv
 export PATH="$HOME/.nodenv/bin:$PATH"
+export PATH="/home/steve/.local/bin:$PATH"
 eval "$(nodenv init -)"
+#PyEnv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 #RustUp
 . "$HOME/.cargo/env"
+#GoEnv
+export GOENV_ROOT="$HOME/.goenv"
+export PATH="$GOENV_ROOT/bin:$PATH"
+eval "$(goenv init -)"
+export PATH="$GOROOT/bin:$PATH"
+export PATH="$PATH:$GOPATH/bin"
+export PATH="$PATH:/snap/bin"
