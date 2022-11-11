@@ -65,7 +65,6 @@ map <C-p> :GFiles<CR>
 "Leader commands"
 "Yank to tmp"
 vmap <leader>tmpy :w! /tmp/vitmp<CR>
-nmap <leader>tmpy :w! /tmp/vitmp<CR>
 nmap <leader>tmpw :wviminfo! /tmp/viminfo<CR>
 "Read from tmp"
 nmap <leader>tmpp :r! cat /tmp/vitmp<CR>
@@ -90,6 +89,10 @@ nmap <leader>rt :RunRailsFocusedTest<CR>
 nmap <leader>ag :Ag --ignore={'*node_modules*','*dist*','*tmp*','*assets*'}<CR>
 "Check files in git status"
 nmap <leader>gf :GFiles?<CR>
+"Ale navigation"
+nmap <leader>an :ALENext<CR>
+nmap <leader>ap :ALEPrevious<CR>
+nmap <leader>ai :ALEInfo<CR>
 
 "Pathogen"
 execute pathogen#infect()

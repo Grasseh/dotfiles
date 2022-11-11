@@ -18,6 +18,7 @@ export TERM=xterm-256color
 export PATH=/usr/bin:/bin:/usr/local/bin:/usr/local/git/bin
 export PATH=/home/grasseh/bin:$PATH
 export PATH=/home/steve/bin:$PATH
+export PATH=/home/stegag@org.nasdaqomx.com/bin:$PATH
 export PATH=/home/grasseh/bin/pypy3/bin:$PATH
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/usr/games
