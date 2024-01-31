@@ -12,7 +12,7 @@
 ############################################################################
 [user]
     name = Steve Gagné
-    email = steve.gagne@nasdaq.com
+	email = steve.gagne@nasdaq.com
 	signingkey = BAE2B9A7E4F28908
 [color]
     ui = true
@@ -34,7 +34,7 @@
     untracked = cyan
 [core]
     editor = vim
-    excludesfile = ~/.gitignore_global
+	excludesFile = /home/stegag@org.nasdaqomx.com/.gitignore_global
 	hooksPath = /githooks
 [merge]
     ff = false

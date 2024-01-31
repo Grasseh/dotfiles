@@ -16,3 +16,5 @@ https://github.com/benmills/vimux
 https://github.com/pgr0ss/vimux-ruby-test
 https://github.com/junegunn/fzf.vim
 https://github.com/junegunn/fzf
+https://github.com/ycm-core/YouCompleteMe
+https://github.com/vim-test/vim-test

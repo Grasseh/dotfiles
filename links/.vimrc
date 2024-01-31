@@ -83,6 +83,7 @@ nmap <leader>ws :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar>
 nmap <leader><TAB> :retab<CR>
 "Run python"
 nmap <leader>py :QuickRun python3<Return>
+nmap <leader>pt :TestNearest<Return>
 "Run rails tests"
 nmap <leader>rt :RunRailsFocusedTest<CR>
 "search recursively"
@@ -93,6 +94,7 @@ nmap <leader>gf :GFiles?<CR>
 nmap <leader>an :ALENext<CR>
 nmap <leader>ap :ALEPrevious<CR>
 nmap <leader>ai :ALEInfo<CR>
+nmap <leader>/ :Ag <space><C-R><C-W>
 
 "Pathogen"
 execute pathogen#infect()
@@ -103,7 +105,10 @@ let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 let g:ale_set_loclist = 0
 let g:ale_set_quickfix = 0
-let g:ale_python_pylint_executable ="pylint3"
+let g:ale_linters = {
+\   'python': ['black', 'ruff', 'mypy'],
+\}
+
 "Airline"
 let g:airline_powerline_fonts = 1
 "Vimux"
@@ -112,3 +117,22 @@ let g:VimuxOrientation = "h"
 let g:vimux_ruby_clear_console_on_run = 0
 "Tmux fix"
 set t_ut=
+let g:ycm_lsp_dir = '/home/stegag@org.nasdaqomx.com/lsp-examples'
+let g:ycm_language_server = []
+let g:ycm_language_server += [
+  \   {
+  \     'name': 'ruby',
+  \     'cmdline': [ expand( g:ycm_lsp_dir . '/ruby/bin/solargraph' ), 'stdio' ],
+  \     'filetypes': [ 'ruby' ],
+  \   },
+  \ ]
+let g:ycm_language_server += [
+  \   {
+  \     'name': 'python',
+  \     'cmdline': [ 'node', expand( g:ycm_lsp_dir . '/python/node_modules/.bin/pyright-langserver' ), '--stdio' ],
+  \     'filetypes': [ 'python' ],
+  \   },
+  \ ]
+let g:ycm_confirm_extra_conf = 0
+let test#python#runner = 'pytest'
+let test#strategy = "vimux"

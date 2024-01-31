@@ -26,6 +26,7 @@ export PATH=$PATH:$HOME/.config/composer/vendor/bin
 export PATH=$PATH:/usr/sbin
 export PATH=$PATH:/sbin
 export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:/snap/bin
 export GOPATH=$HOME/projects/go
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#

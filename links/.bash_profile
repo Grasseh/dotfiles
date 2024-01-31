@@ -118,18 +118,27 @@ alias cu='composer update'
 alias deploy="ssh-add && ssh -A root@devops.metrio.net"
 alias dc="docker-compose"
 alias dcu="docker-compose up"
+alias dpa="docker system prune -a --volumes -f"
 alias dropdb="mongo metrio_development --eval \"db.dropDatabase()\"; mongo metrio_prod_copy --eval \"db.dropDatabase()\""
 alias ft='printf "\e[?2004l"' #Fix terminal pasting
 alias fiap='frontend_is_always_problems'
+alias fixvim='(cd /usr/bin && sudo rm vim && sudo ln -s /usr/local/bin/vim)'
 alias gitgud='echo "[ ] not rekt  [x] rekt"'
-alias karb='killall -s SIGKILL ruby && pkill -9 -f gulp; killall node; killall webpack'
+alias googlesux='sudo rm apt/sources.list.d/google-chrome.list'
+alias karb='killall -s SIGKILL ruby && pkill -9 -f gulp; killall node; killall webpack; killall gulp'
+alias kapy='killall -s SIGKILL python3'
 alias la='ls -alsh'
 alias mdbr='sudo service mongod restart'
+alias mdbs='mongod --dbpath /var/lib/mongo --logpath /var/log/mongodb/mongod.log --replSet rs0 --fork'
 alias notes='vim ~/notes.MD'
 alias omcb='overmind connect backend'
 alias omd='CLIENT=devcli overmind s'
 alias oms='overmind s'
 alias path='echo -e ${PATH//:/\\n}'
+alias pcov='poetry run pytest --cov publishing --cov-branch tests/'
+alias pmp='poetry run mypy $(find . -name "*.py" -not -path "./.venv/*" -not -path "./alembic/*" | xargs)'
+alias ppc='poetry run pre-commit run --all-files'
+alias ppt='poetry run pytest'
 alias pu='phpunit'
 alias rdw='bin/rails dev:watch'
 alias rdwf='bin/rails dev:watch_full'
@@ -164,6 +173,11 @@ alias m2d='cd ~/projects/metrio2/devops'
 alias m3d='cd ~/projects/metrio3/devops'
 alias m4d='cd ~/projects/metrio4/devops'
 alias m5d='cd ~/projects/metrio5/devops'
+alias p1='cd ~/projects/publishing'
+alias p2='cd ~/projects/publishing2'
+alias p3='cd ~/projects/publishing3'
+alias p4='cd ~/projects/publishing4'
+alias p5='cd ~/projects/publishing5'
 alias lm='~/metrio.sh'
 
 #-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-#
@@ -285,5 +299,14 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 #NodeEnv
 export PATH="$HOME/.nodenv/bin:$PATH"
-export PATH="/home/steve/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 eval "$(nodenv init -)"
+#pyenv
+export PATH="$HOME/.pyenv/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+. "$HOME/.cargo/env"
+export PATH="$HOME/bin/google-cloud-sdk/bin:$PATH"
+
+export GITHUB_REPO_TOKEN="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"

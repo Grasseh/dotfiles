@@ -14,3 +14,6 @@
 .DS_Store
 .*.swp
 Procfile
+**/.node-version
+*mypy_cache
+.ycm_extra_conf.py
