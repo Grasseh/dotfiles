@@ -2,7 +2,7 @@ https://github.com/scrooloose/nerdtree
 https://github.com/bling/vim-airline
 https://github.com/vim-airline/vim-airline-themes
 https://github.com/sheerun/vim-polyglot
-https://github.com/w0rp/ale
+https://github.com/dense-analysis/ale
 https://github.com/yegappan/grep
 https://github.com/airblade/vim-gitgutter.git
 https://github.com/machakann/vim-sandwich
@@ -13,4 +13,7 @@ https://github.com/thinca/vim-quickrun
 https://github.com/tpope/vim-commentary
 https://github.com/tpope/vim-rails.git
 https://github.com/junegunn/fzf.vim
-https://github.com/junegunn/fzf
+https://github.com/benmills/vimux
+https://github.com/pgr0ss/vimux-ruby-test
+https://github.com/vim-test/vim-test
+https://github.com/gcm-core/YouCompleteMe

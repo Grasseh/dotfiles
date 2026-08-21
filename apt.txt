@@ -11,3 +11,5 @@ mysql-server
 libapache2-mod-php7.0
 php7.0-curl
 tmux
+vim-nox
+silversearcher-ag

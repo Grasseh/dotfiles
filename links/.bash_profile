@@ -15,6 +15,8 @@
 # ---------------------------------------------------------------------
 source ~/.bash_aliases
 screenfetch -E -c 10,13
+setxkbmap ca multix
+xdg-settings set default-web-browser firefox_firefox.desktop
 #---------------------------------------------------------------------
 # Git aliases
 # ---------------------------------------------------------------------
@@ -27,6 +29,7 @@ alias gra='git rebase --abort'
 alias grc='git rebase --continue'
 alias grh='git reset --hard'
 alias ggc='git gc'
+alias grs='git restore --staged'
 # add
 alias ga='git add'
 alias gaa='git add -A .'
@@ -40,6 +43,7 @@ alias gm="git merge --no-ff"
 # log
 alias gl='git log --graph --abbrev-commit --decorate --date=relative --format=format:'"'"'%C(bold cyan)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(magenta)- %an%C(reset)%C(bold yellow)%d%C(reset)'"'"' --all'
 alias gl2='git log --graph --abbrev-commit --decorate --format=format:'"'"'%C(bold cyan)%h%C(reset) - %C(bold green)%aD%C(reset) %C(dim green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n          %C(white)%s%C(reset) %C(magenta)- %an%C(reset)'"'"' --all'
+alias glw='gl --since "1 week ago" --author "Steve Gagné"'
 alias grl='git reflog;'
 # submodule
 alias gsi='git submodule init; git submodule update'
@@ -92,6 +96,8 @@ alias greso="git remote set-url origin"
 alias grer="git remote remove"
 #more
 alias gpr="git branch --merged | egrep -v \"(^\*|master|dev)\" | xargs git branch -d; git remote prune origin" #Prune branches that are merged, as well as their remotes
+alias ghprc='gh pr create --assignee @me'
+alias ghprv='gh pr view'
 # ---------------------------------------------------------------------
 # Other aliases
 # ---------------------------------------------------------------------
@@ -100,7 +106,10 @@ alias ...='cd ..; cd ..;'
 alias ....='cd ..; cd ..;cd ..;'
 alias ~="cd ~"
 alias aliases='vim ~/dotfiles/links/.bash_profile'
+alias bigfiles='sudo find / -xdev -type f - size +200M -exec du -bh {} \;'
 alias brails='bin/rails'
+alias bril='xrandr --output eDP-1 --brightness'
+alias brih='xrandr --output HDMI-1 --brightness'
 alias c='clear'
 alias ca='composer dumpautoload'
 alias ci='composer install'
@@ -108,6 +117,7 @@ alias cr='composer require'
 alias cu='composer update'
 alias ft='printf "\e[?2004l"' #Fix terminal pasting
 alias gitgud='echo "[ ] not rekt  [x] rekt"'
+alias karb='killall -s SIGKILL ruby && pkill -9 -f gulp; killall node; killall webpack; killall gulp;'
 alias la='ls -alsh'
 alias mdbr='sudo service mongodb restart'
 alias notes='vim ~/notes.MD'
@@ -176,4 +186,7 @@ export NVM_DIR="$HOME/.nvm"
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
 export PATH
-eval "$(rbenv init -)"
+eval "$(~/.rbenv/bin/rbenv init - --no-rehash bash)"
+
+# Added by `nodenv init` on Fri Aug 14 23:46:00 EDT 2026
+eval "$(~/.nodenv/bin/nodenv init - --no-rehash bash)"
