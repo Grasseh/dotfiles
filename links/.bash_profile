@@ -186,7 +186,8 @@ export NVM_DIR="$HOME/.nvm"
 # The orginal version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
 export PATH
-eval "$(~/.rbenv/bin/rbenv init - --no-rehash bash)"
+eval "$(~/.rbenv/bin/rbenv init)"
+PATH="/root/.rbenv/shims:/root/.rbenv/bin:${PATH}"
 
 # Added by `nodenv init` on Fri Aug 14 23:46:00 EDT 2026
 eval "$(~/.nodenv/bin/nodenv init - --no-rehash bash)"

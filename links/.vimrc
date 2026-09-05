@@ -100,6 +100,8 @@ nmap <leader>/ :ag <space><C-R><C-W>
 nmap <leader>cp :Copilot<CR>
 nmap <leader>cc :CopilotChatOpen<CR>
 nmap <leader>ca <Plug>CopilotChatAddSelection<CR>
+nmap <leader>se :syntax enable<CR>
+
 
 "Pathogen"
 execute pathogen#infect()
